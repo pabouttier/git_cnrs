@@ -1,0 +1,12 @@
+name = "Duckquill"
+description = "Modern, pretty, and clean theme"
+license = "MIT"
+homepage = "https://git.exozy.me/daudix/duckquill"
+min_version = "0.17.2"
+demo = "https://duckquill.exozy.me"
+
+[extra]
+
+[author]
+name = "David Lapshin"
+homepage = "https://daudix.exozy.me"
