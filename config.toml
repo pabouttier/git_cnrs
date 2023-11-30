@@ -55,9 +55,9 @@ icons = true
 # Links used in the nav; any icon from https://icons.getbootstrap.com
 # can be used as the icon. The bi- prefix should not be added.
 links = [
-    {url = "/prerequis", name = "Prérequis", icon = "car-front-fill"},
-    {url = "/supports", name = "Supports", icon = "git"},
-    {url = "/ressources", name = "Ressources", icon = "journal-bookmark-fill"},
+    {url = "/git_cnrs/prerequis", name = "Prérequis", icon = "car-front-fill"},
+    {url = "/git_cnrs/supports", name = "Supports", icon = "git"},
+    {url = "/git_cnrs/ressources", name = "Ressources", icon = "journal-bookmark-fill"},
 ]
 
 [extra.footer]
