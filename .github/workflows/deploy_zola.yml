@@ -11,7 +11,9 @@ jobs:
         uses: taiki-e/install-action@v2
         with:
           tool: zola
-        run: "zola build" 
+        run: |
+          sudo snap install --edge zola
+          zola build
       - name: Ensure talks dir exists
         run: "mkdir -p public/slides"
       - name: copy files and css into talks
