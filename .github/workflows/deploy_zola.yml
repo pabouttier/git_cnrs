@@ -7,12 +7,39 @@ jobs:
     steps:
       - name: checkout
         uses: actions/checkout@v4
-      - name: build_and_deploy
-        uses: shalzz/zola-deploy-action@v0.17.2
+      - name: build zola SS
+        uses: taiki-e/install-action@v2
+        with:
+          tool: zola
+        run: "zola build" 
+      - name: Ensure talks dir exists
+        run: "mkdir -p public/slides"
+      - name: copy files and css into talks
+        run: "cp -r slides/fig slides/styles public/slides/"
+      - name: Marp Build (*.html)
+        uses: docker://marpteam/marp-cli:v3.4.0
+        with:
+          args: --allow-local-files -I ./slides/ -o ./public/slides --html
         env:
-          # Target branch
-          PAGES_BRANCH: gh-pages
-          # Provide personal access token
-          #TOKEN: ${{ secrets.TOKEN }}
-          # Or if publishing to the same repo, use the automatic token
-          TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          MARP_USER: root:root
+      - name: Marp Build (*.pdf)
+        uses: docker://marpteam/marp-cli:v3.4.0
+        with:
+          args: --allow-local-files -I ./slides/ -o ./public/slides --pdf
+        env:
+          MARP_USER: root:root
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v2
+        with:
+          path: ./public
+
+  deploy:
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    runs-on: ubuntu-latest
+    needs: build
+    steps:
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v2
