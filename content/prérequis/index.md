@@ -8,7 +8,7 @@ insert_anchor_links = "right"
 
 Pour cette formation vous aurez besoin d'un **navigateur**, de **git**, **d'un éditeur de texte ou de code**, **d'un terminal**. 
 
-**Ne vous inquiétez pas nous prendrons le temps de découvrir tous ces éléments ensemble si vous n'êtes pas familiers.** 
+**Ne vous inquiétez pas, nous prendrons le temps de découvrir tous ces éléments ensemble si vous n'êtes pas familiers.** 
 
 
 ## Installation des outils
