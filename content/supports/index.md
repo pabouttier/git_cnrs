@@ -4,16 +4,36 @@ title = "Déroulé et supports de la formation"
 insert_anchor_links = "right"
 +++
 
-# Plan et supports de formation
+# Plan
 
-La formation se déroulera comme suit : 
+Cette formation abordera les thèmes décrits ci-dessous. Les supports associés seront bientôt publiés. 
 
-1. Introduction
-2. Introduction à Git : Cours et mise en pratique
-3. Introduction à GitLab : Cours et mise en pratique
-4. Git et les dépôts distants
-5. Collaborer avec un projet GitLab
-6. L'intégration/déploiement continu avec GitLab
-7. Miscellanées
+## Git
 
-Les supports associés seront bientôt publiés. 
+* Contexte et principes des gestionnaires de version
+* Les bases de Git, le premier dépôt (états des fichiers, principes de copie de travail, zone d’index et dépôt, commit) 
+* Naviguer dans l’historique d’un dépôt 
+* Les branches avec Git
+
+## GitLab
+* Contexte des forges Logiciels
+* Les groupes et les projets GitLab
+* Tour d’horizon des fonctionnalités et des droits de groupe
+* Le premier projet : paramétrages, fonctionnalités et des droits et groupes
+
+## Git & GitLab
+
+* Dépôts Git locaux et dépôts git distants 
+* Lier un dépôt Git local
+* Collaborer sur un projet GitLab
+
+## Gestion de projet avancée avec GitLab
+
+* La langage markdown 
+* Les issues
+* Fork & merge-request
+
+## Intégration et déploiement continu avec Gitlab
+
+* Principes et mise en place
+* Création et publication d’un site web avec Gitlab
