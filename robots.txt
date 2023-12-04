@@ -1,0 +1,4 @@
+User-agent: *
+Disallow:
+Allow: /
+Sitemap: https://pabouttier.github.io/git_cnrs/sitemap.xml
