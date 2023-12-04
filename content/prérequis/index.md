@@ -6,9 +6,9 @@ insert_anchor_links = "right"
 
 # Prérequis
 
-Pour cette formation vous aurez besoin d'un **navigateur**, de **git**, **d'un éditeur de texte ou de code**, **d'un terminal**. Si vous ne savez pas ce qu'est un terminal, veuillez vous reporter en bas de page à la section *Rudiments d'utilisation d'un Terminal.*
+Pour cette formation vous aurez besoin d'un **navigateur**, de **git**, **d'un éditeur de texte ou de code**, **d'un terminal**. 
 
-**Ne vous inquiétez pas nous prendrons le temps de découvrir tous ces éléments ensemble.** 
+**Ne vous inquiétez pas nous prendrons le temps de découvrir tous ces éléments ensemble si vous n'êtes pas familiers.** 
 
 
 ## Installation des outils
