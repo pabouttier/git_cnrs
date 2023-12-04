@@ -8,8 +8,7 @@ footer: Git(Lab)@CNRS - pierre-antoine.bouttier@univ-grenoble-alpes.fr
 
 <!-- _class: titlepage -->
 
-
-![bg left:33% fit](fig/jupgiter.png)
+![bg left:33% fit](fig/logo-git.png)
 # Introduction à Git
 ## Cours et mise en pratique
 
@@ -33,10 +32,15 @@ footer: Git(Lab)@CNRS - pierre-antoine.bouttier@univ-grenoble-alpes.fr
 </div>
 
 ---
-## Un gestionnaire de quoi ?
+ <!-- _class: cite -->     
 
-> Your closest collaborator is you six months ago, but you don’t reply to emails.
-***Paul Wilson, UW-Madison***
+Your closest collaborator is you six months ago, but you don’t reply to emails.
+
+<div class="cite-author" data-text="Paul Wilson, UW-Madison">
+
+
+---
+# Un gestionnaire de quoi ?
 
 * Un gestionnaire de version de code vous permet de : 
   * **Construire l'historique**, comme bon vous semble, de toutes les évolutions d'un ensemble de fichiers (principalement textuels)
@@ -45,7 +49,7 @@ footer: Git(Lab)@CNRS - pierre-antoine.bouttier@univ-grenoble-alpes.fr
   * Et d'atténuer drastiquement la peur de *détruire des trucs*
 
 ---
-## Les gestionnaires de versions de code (CVS en anglais)
+# Les gestionnaires de versions de code (CVS en anglais)
 
 Initialement prévus pour les codes source logiciels, leur versatilité actuelle en font des outils précieux pour gérer tous types de productions incluant du texte ayant vocation à évoluer dans le temps :
 
@@ -55,7 +59,7 @@ Initialement prévus pour les codes source logiciels, leur versatilité actuelle
 * ...
 
 --- 
-## Pourquoi Git ?
+# Pourquoi Git ?
 
 Il existe plusieurs CVS : cvs, subversion, mercurial, git, etc.
 
@@ -74,7 +78,11 @@ Les avantages de git :
 ---
 # Les concepts fondamentaux et commandes de bases
 
-![h:500 center](fig/git.png)
+<center>
+
+![h:400 center](fig/git.png)
+
+</center>
 
 ---
 ## Les premiers pas
@@ -105,7 +113,7 @@ Mais il est possible de spécifier des informations différentes pour chaque pro
 Git va parfois nous inviter à saisir du texte, c'est là que la configuration de l'éditeur de texte de référence intervient. 
 
 ---
-## Le premier dépôt - git init
+# Le premier dépôt - git init
 
 **Dépôt/Repository** : dossier contenant l'ensemble de fichiers dont on veut suivre l'évolution ainsi que les fichiers nécessaires au fonctionnement de Git.
 
