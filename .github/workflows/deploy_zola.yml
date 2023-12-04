@@ -8,9 +8,6 @@ jobs:
       - name: checkout
         uses: actions/checkout@v4
       - name: build zola SS
-        uses: taiki-e/install-action@v2
-        with:
-          tool: zola
         run: |
           sudo snap install --edge zola
           zola build
