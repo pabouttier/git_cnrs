@@ -7,9 +7,12 @@ footer: Git(Lab)@CNRS - pierre-antoine.bouttier@univ-grenoble-alpes.fr
 ---
 
 <!-- _class: titlepage -->
+<style scoped>
+margin-left: 10%;
 
+</style>
 
-![bg left:33% fit](fig/logo-git.png)
+![bg left:33% fit](fig/logo-gitlab.png)
 # L'intégration/déploiement continue
 ## Automatisation des tâches
 

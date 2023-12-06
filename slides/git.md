@@ -8,7 +8,12 @@ footer: Git(Lab)@CNRS - pierre-antoine.bouttier@univ-grenoble-alpes.fr
 
 <!-- _class: titlepage -->
 
-![bg left:33% fit](fig/logo-git.png)
+<style scoped>
+margin-left: 10%;
+
+</style>
+
+![bg left:25% fit](fig/logo-git.png)
 # Introduction à Git
 ## Cours et mise en pratique
 
@@ -51,7 +56,7 @@ Your closest collaborator is you six months ago, but you don’t reply to emails
 ---
 # Les gestionnaires de versions de code (CVS en anglais)
 
-Initialement prévus pour les codes source logiciels, leur versatilité actuelle en font des outils précieux pour gérer tous types de productions incluant du texte ayant vocation à évoluer dans le temps :
+Initialement prévus pour les **codes source logiciels**, leur versatilité actuelle en font des outils précieux pour gérer tous types de productions incluant du texte ayant vocation à évoluer dans le temps :
 
 * Documentation
 * Rapport technique, mémoires 
@@ -100,7 +105,7 @@ $ git help <command>
 ---
 ## La configuration de git 
 
-Renseignons quelques informations (identiques à gitlab si possible, surtout pour le mail qui servira à Gitlab plus tard pour identifier les commits) : 
+Renseignons quelques informations (identiques à GitLab si possible, surtout pour le mail) : 
 
 ```shell
 $ git config --global user.name "John Doe"
@@ -108,6 +113,7 @@ $ git config --global user.email johndoe@example.com
 $ git config --global core.editor code # ou gedit, ou ce que vous utilisez comme éditeur de texte
 ```
 Git va écrire dans le fichier `~/.gitconfig` 
+
 Mais il est possible de spécifier des informations différentes pour chaque projet. Elles seront prioritaires sur la configuration globale. 
 
 Git va parfois nous inviter à saisir du texte, c'est là que la configuration de l'éditeur de texte de référence intervient. 
@@ -136,7 +142,7 @@ $ git init new_project
 La commande `git init` peut très bien être utilisée dans un dossier contenant déjà des fichiers et dossiers. 
 
 ```shell
-$ cd ..../example_project
+$ cd ../example_project
 $ git init . 
 ```
 
@@ -145,7 +151,7 @@ $ git init .
 `git` ne versionne que des fichiers. Un dossier vide ne sera pas considéré par `git`.
 
 ---
-## Votre nouvel ami - git status
+## Votre nouvel ami - `git status`
 
 `git status` vous donnera plein d'informations sur l'état de votre dépôt. **À utiliser sans modération.** 
 
