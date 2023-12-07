@@ -41,7 +41,7 @@ margin-left: 10%;
 4. *Comprendre les branches*
 
 ---
-## Quelques situations rencontrées
+# Quelques situations rencontrées
 
 <div class="columns-center" align="center">
 <div>     
@@ -115,7 +115,7 @@ Les avantages de git :
 <!-- </center> -->
 
 ---
-## Les premiers pas
+# Les premiers pas
 
 Git installé, nous allons l'utiliser depuis la ligne de commande (terminal, PowerShell). Même fonctionnement sous Windows, Mac OS et Linux : 
 ```shell
@@ -128,7 +128,7 @@ $ git help <command>
 ```
 
 ---
-## La configuration de git 
+# La configuration de git 
 
 Renseignons quelques informations (identiques à GitLab si possible, surtout pour le mail) : 
 
@@ -163,7 +163,7 @@ $ cd
 $ git init new_project
 ```
 ---
-## Le premier dépôt - git init
+# Le premier dépôt - git init
 
 La commande `git init` peut très bien être utilisée dans un dossier contenant déjà des fichiers et dossiers. 
 
@@ -177,7 +177,7 @@ $ git init .
 `git` ne versionne que des fichiers. Un dossier vide ne sera pas considéré par `git`.
 
 ---
-## Votre nouvel ami - `git status`
+# Votre nouvel ami - `git status`
 
 `git status` vous donnera plein d'informations sur l'état de votre dépôt. **À utiliser sans modération.** 
 
@@ -190,7 +190,7 @@ $ git status
 ***Git est globalement bavard, mais ses messages vous indiquent souvent la marche à suivre si vous êtes perdus et/ou bloqués.***
 
 ---
-## Surveillance des fichiers - git add
+# Surveillance des fichiers - git add
 
 Nous voulons maintenant dire à Git quel(s) fichier(s) doit-il surveiller pour enregistrer leurs modifications par la suite : 
 
@@ -209,7 +209,7 @@ $ git status
 ```
 
 ---
-## Sauvegarde des modifications - git commit
+# Sauvegarde des modifications - git commit
 
 Notre fichier est suivi, maintenant, nous voulons sauvegarder son état : 
 ```
@@ -277,7 +277,7 @@ $ git commit -am "Je sauvegarde les modifs des fichiers que Git connaît déjà"
 ```
 
 ---
-## Au sujet des commits 
+# Au sujet des commits 
 
 Les commits sont l'unité atomique d'un dépôt git : 
 * **Ne négligez pas** (tout le temps) **le message qui l'accompagne**
@@ -286,7 +286,7 @@ Les commits sont l'unité atomique d'un dépôt git :
 * Les commits sont ce qui va vous permettre de voyager dans le temps : **à vous de gérer les étapes**  
 
 --- 
-## TL;DR
+# TL;DR
 
 ```shell
 $ cd path/vers/un/dossier_rempli
@@ -300,7 +300,7 @@ $ git add new_file.txt
 $ git commit -m "Ma troisième version"
 ```
 ---
-## Un petit mot sur les fichiers supprimés
+# Un petit mot sur les fichiers supprimés
 
 Si vous voulez supprimer un fichier, le supprimer sur votre disque (e.g. commande `rm`) n'indique pas à git que vous voulez le supprimer du dépôt. Il faut également faire : 
 ```shell
@@ -316,7 +316,7 @@ $ git commit -m "Je ne veux plus sauvegarder de modifs dans ce fichier"
 ```
 
 ---
-## Indexer toutes les modifications
+# Indexer toutes les modifications
 
 Il existe une commande pour tout indexer en même temps, fichiers ajoutés, modifiés et supprimés : 
 ```shell
@@ -341,7 +341,7 @@ Les 30% restants sont un peu dans la suite et surtout dans la partie gitlab.
 4. *Comprendre les branches*
 
 ---
-## Morceaux d'histoire - git log
+# Morceaux d'histoire - git log
 
 Maintenant que nous avons construit un historique, nous voulons le consulter : 
 ```shell
@@ -353,7 +353,7 @@ Plusieurs remarques :
 * Nous voyons l'importance ici des messages de commits : **ils mettent du sens dans l'historique**
 
 ---
-## Retour vers le futur
+# Retour vers le futur
 
 Git permet non seulement de construire un historique mais également de voyager dedans.
 Nous pouvons retrouver n'importe quel état de tout ou partie du dépôt : 
@@ -366,7 +366,7 @@ $ git checkout <hash de commit> # Remet tout le dépôt dans l'état où il éta
 **Dans la plupart des cas, c'est la bonne façon d'annuler des modifications précédentes**, on ne touche pas à l'historique (on l'enrichit), on ne détruit rien du travail accompli. 
 
 ---
-## Retour vers le futur bis
+# Retour vers le futur bis
 
 Une façon plus compacte de faire la même chose sur l'ensmeble du dépôt : `git revert`.
 ```shell
@@ -376,7 +376,7 @@ $ git revert <id commit>
 **`git revert` va créer un nouveau commit qui remettra le dépôt dans l'état de l'ancien commit indiqué.** 
 
 ---
-## Les autres manières de revenir en arrière
+# Les autres manières de revenir en arrière
 
 Annulation des modifications sur un fichier (retour au dernier commit)
 ```shell
@@ -404,7 +404,7 @@ git commit --amend
 4. ***Comprendre les branches***
 
 ---
-## Les branches avec Git
+# Les branches avec Git
 
 Un `commit` est un lien/pointeur vers un instantané de l'état de l'ensemble des fichiers de votre dépôt. Git empile les commits au fil de vos validations pour construire l'historique de vos projets. 
 
@@ -417,7 +417,7 @@ Un `commit` est un lien/pointeur vers un instantané de l'état de l'ensemble de
 Une branche est simplement un lien/pointeur vers un commit particulier (et tout l'historique qu'il implique). Tout dépôt git possède une branche par défaut, nommée souvent **master** ou depuis peu, **main**. 
 
 ---
-## Pourquoi créer des branches ? 
+# Pourquoi créer des branches ? 
 
 * Pour tester une nouvelle fonctionnalité...
 * Corriger des bugs...
@@ -426,7 +426,7 @@ Une branche est simplement un lien/pointeur vers un commit particulier (et tout 
 * **Une nouvelle branche implique une divergence par rapport à notre branche principale.**
 
 --- 
-## Créer et utiliser une branche (1/4)
+# Créer et utiliser une branche (1/4)
 
 Création de la branche nommée `newtest`
 ```shell
@@ -443,7 +443,7 @@ Nous avons créé un nouveau pointeur sur le dernier commit.
 Le pointeur `HEAD` indique sur quelle branche nous nous trouvons (ici, toujours `master`)
 
 ---
-## Créer et utiliser une branche (2/4)
+# Créer et utiliser une branche (2/4)
 
 Pour changer de branche : 
 ```shell
@@ -459,7 +459,7 @@ $ git checkout newtest # ou git switch newtest
 A partir de maintenant, tous les commits suivants s'empileront sur la branche `newtest` et non plus sur la branche `master`. Notez que `HEAD` pointe bien maintenant sur la branche `newtest`. 
 
 ---
-## Créer et utiliser une branche (3/4)
+# Créer et utiliser une branche (3/4)
 
 Création et changement de branche en une seule opération :
 ```shell
@@ -471,7 +471,7 @@ $ git branch
 ```
 
 ---
-## Créer et utiliser une branche (4/4)
+# Créer et utiliser une branche (4/4)
 
 Lors du basculement d'une branche à une autre, les fichiers seront modifiés pour se mettre dans l'état du dernier commit de la branche visée. 
 
@@ -489,7 +489,7 @@ Au bout d'un moment, on peut vouloir fusionner les branches, c'est à dire inté
 Un peu de pratique
 
 ---
-## Fusion des branches (1/3)
+# Fusion des branches (1/3)
 
 Dans notre cas, nous voulons intégrer les développements de la source `newtest` dans la cible `master`. 
 
@@ -505,7 +505,7 @@ $ git merge newtest
 S'il n'y a pas de conflits, cela crée un nouveau commit (dit *de fusion*) dans la branche cible `master`.
 
 ---
-## Fusion des branches (2/3)
+# Fusion des branches (2/3)
 
 À la suite d'une fusion, les deux branches existent toujours et peuvent continuer à évoluer comme elles le faisaient auparavant. 
 
@@ -516,7 +516,7 @@ S'il n'y a pas de conflits, cela crée un nouveau commit (dit *de fusion*) dans 
 </center>
 
 ---
-## Fusion des branches (3/3)
+# Fusion des branches (3/3)
 
 Pour supprimer une branche que l'on juge inutile :
 ```shell
@@ -530,7 +530,7 @@ $ git branch -d newtest
 </center>
 
 ---
-## Résoudre les problèmes de fusion - les conflits
+# Résoudre les problèmes de fusion - les conflits
 
 Lorsque l'on fusionne deux branches, il se peut que Git nous dise qu'il y a des problèmes (**conflits**). Ces conflits peuvent venir de modifications faites sur les mêmes fichiers, aux mêmes lignes dans les deux branches.
 
@@ -544,7 +544,7 @@ Something else
 >>>>>>> newtest
 ```
 ---
-## Résoudre les problèmes de fusion - les conflits
+# Résoudre les problèmes de fusion - les conflits
 
 Il faut alors éditer le fichier à la main pour choisir ce que l'on veut garder. 
 
@@ -556,7 +556,7 @@ Une fois fait, il faut indexer notre modification du fichier (`git add ...`) et 
 Un peu de pratique
 
 --- 
-## À retenir - les commandes essentielles
+# À retenir - les commandes essentielles
 
 * **Dépôt git** : dossier regroupant l'ensemble des fichiers et dossiers que vous voulez versionner et des fichiers/bases de données dont git a besoin pour fonctionner. Création du dépôt dans un dossier existant : `git init`
 * **3 états** pour un fichier dans Git : 
@@ -566,7 +566,7 @@ Un peu de pratique
 * `git status` vous donne toutes les informations sur l'état de votre dépôt. 
 
 ---
-## À retenir - les branches
+# À retenir - les branches
 
 * **Une branche est un pointeur/une étiquette vers un commit spécifique**, lui-même le résultat d'un empilement de commit (instantané de l'état des fichiers de votre dépôt)
 * On peut créer une nouvelle branche à l'aide de la commande `git branch <nombranche>` (ou `git switch -C`)
@@ -576,7 +576,7 @@ Un peu de pratique
 * On supprime une branche à l'aide de `git branch -d <nombranche>`
 
 ---
-## Les bonnes pratiques
+# Les bonnes pratiques
 
 * Git fournit un ensemble de concepts et d'outils pour construire l'historique de votre travail
 * Il n'y a pas UNE bonne façon de les utiliser
@@ -587,7 +587,7 @@ Un peu de pratique
   * ...Et à les supprimer quand elles ne sont plus utiles.
 
 ---
-## Ce que je n'ai pas présenté
+# Ce que je n'ai pas présenté
 
 * `git diff`, `git tag`
 * Des commandes compliquées (e.g. `git rebase`, `git cherry-pick`) pour réorganiser l'historique
