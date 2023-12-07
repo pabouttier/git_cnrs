@@ -8,7 +8,7 @@ insert_anchor_links = "right"
 
 Cette formation abordera les thèmes décrits ci-dessous. Les supports associés seront bientôt publiés. 
 
-## [Git](/git_cnrs/slides/git.html)
+## [Git](../../git_cnrs/slides/git.html)
 
 * Contexte et principes des gestionnaires de version
 * Les bases de Git, le premier dépôt (états des fichiers, principes de copie de travail, zone d’index et dépôt, commit) 
