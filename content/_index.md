@@ -22,6 +22,6 @@ Cette formation s'adresse à tout le monde, même si une expérience de la ligne
 
 ## Qui suis-je ? 
 
-Pierre-Antoine Bouttier, Ingénieur de rceherche CNRS, expert en ingénierie logicielle et anciennement numéricien, je suis actuellement directeur adjoint de l'[UAR GRICAD](https://gricad.univ-grenoble-alpes.fr). 
+Pierre-Antoine Bouttier, Ingénieur de recherche CNRS, expert en ingénierie logicielle et anciennement numéricien, je suis actuellement directeur adjoint de l'[UAR GRICAD](https://gricad.univ-grenoble-alpes.fr). 
 
 Vous pouvez me contacter [à cette adresse](mailto:pierre-antoine.bouttier@univ-grenoble-alpes.fr). 
