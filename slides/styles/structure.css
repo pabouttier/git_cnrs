@@ -44,7 +44,7 @@ section p {
   margin-top: 0.5em;
   margin-bottom: 0.25em;
   line-height: 1.3em;
-  font-size: 32px;
+  font-size: 95%;
 }
 
 section li {
@@ -71,9 +71,10 @@ section em {
 /* Definition for bold text */
 section strong {
   color: var(--bold-color);
+  font-weight: bold;
   padding-left: 5px;
   padding-right: 5px;
-  font-weight: 600;
+  font-weight: 900;
 }
 
 /* May append some string to page number     */
