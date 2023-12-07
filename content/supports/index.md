@@ -15,13 +15,13 @@ Cette formation abordera les thèmes décrits ci-dessous. Les supports associés
 * Naviguer dans l’historique d’un dépôt 
 * Les branches avec Git
 
-## [GitLab](git_cnrs/slides/gitlab.html)
+## [GitLab](../../git_cnrs/slides/gitlab.html)
 * Contexte des forges Logiciels
 * Les groupes et les projets GitLab
 * Tour d’horizon des fonctionnalités et des droits de groupe
 * Le premier projet : paramétrages, fonctionnalités et des droits et groupes
 
-## [Git & GitLab](git_cnrs/slides/git_gitlab.html)
+## [Git & GitLab](../../git_cnrs/slides/git_gitlab.html)
 
 * Dépôts Git locaux et dépôts git distants 
 * Lier un dépôt Git local
