@@ -42,7 +42,7 @@ margin-left: 10%;
    3. *Mise en oeuvre de la CI/CD*
 
 ---
-## Qu'est ce que c'est ?
+# Qu'est ce que c'est ?
 
 **Concept**
 * Continuous Integration : pratique consistant **à associer à chaque modification des sources** une séries d'opérations qui seront exécutées automatiquement.
@@ -60,7 +60,7 @@ margin-left: 10%;
 * Économiser du temps pour les développeurs, réduire le "time-to-release" ou le "time-to-new-features"
 
 ---
-## Par quelle magie ?
+# Par quelle magie ?
 
 À chaque push vers le serveur, des tâches pré-définies par les développeurs sont exécutées.
 
@@ -71,7 +71,7 @@ margin-left: 10%;
 </center>
 
 ---
-## Quelques exemples
+# Quelques exemples
 
 <center>
 
@@ -82,7 +82,7 @@ margin-left: 10%;
 Ici, il y a du **déploiement continu** aussi. Mais les mécanismes sont les mêmes que pour la CI. Seule la finalité change.
 
 ---
-## Comment mettre la CI/CD en place ? 
+# Comment mettre la CI/CD en place ? 
 
 **Deux ingrédients**
 - L'activation d'un exécuteur (ou runner). 
