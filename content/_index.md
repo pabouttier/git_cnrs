@@ -12,10 +12,10 @@ Bienvenue sur la site de la formation CNRS *Initiation à Git et GitLab*.
 
 **Les objectifs de la formation** sont les suivants : 
 
-- Être autonome avec l’outil Git et la plateforme Gitlbab 
+- Être autonome avec l’outil Git et la plateforme GitLab 
 - Connaître les concepts de Git
 - Apprendre à versionner son code avec Git
-- Savoir manipuler tous les aspects d’un projet GitlAb
+- Savoir manipuler tous les aspects d’un projet GitLab
 - Publier des documents avec l’aide de Gitlab
 
 Cette formation s'adresse à tout le monde, même si une expérience de la ligne de commande est préférable, notamment pour la partie concernant Git. 

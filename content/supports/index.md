@@ -19,7 +19,7 @@ Cette formation abordera les thèmes décrits ci-dessous. Les supports associés
 * Contexte des forges Logiciels
 * Les groupes et les projets GitLab
 * Tour d’horizon des fonctionnalités et des droits de groupe
-* Le premier projet : paramétrages, fonctionnalités et des droits et groupes
+* Le premier projet : paramétrages, fonctionnalités, droits et groupes
 
 ## [Git & GitLab](../../git_cnrs/slides/git_gitlab.html)
 

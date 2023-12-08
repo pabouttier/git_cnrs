@@ -8,15 +8,15 @@ insert_anchor_links = "right"
 
 Pour cette formation vous aurez besoin d'un **navigateur**, de **git**, **d'un éditeur de texte ou de code**, **d'un terminal**. 
 
-**Ne vous inquiétez pas, nous prendrons le temps de découvrir tous ces éléments ensemble si vous n'êtes pas familiers.** 
+**Ne vous inquiétez pas, nous prendrons le temps de découvrir tous ces éléments ensemble si vous n'y êtes pas familiers.** 
 
 
 ## Installation des outils
 
-Dans la suite, pour chaque plateforme, je vous propose d'installer **Visual Studio Code** comme éditeur de code, parce qu'il est versatile, permet d'avoir accès à un terminal ainsi qu'une interface avec Git directement incluse. **Deux remarques** : 
+Dans la suite, pour chaque plateforme, je vous propose d'installer **Visual Studio Code** comme éditeur de code, parce qu'il est versatile, permet d'avoir accès à un terminal ainsi qu'à une interface avec Git, directement incluse. **Deux remarques** : 
 
 - Si vous avez déjà l'habitude d'utiliser d'autres éditeurs de codes (atom, intelliJ, notepad, gedit, vim, emacs, nano, etc.), vous n'avez pas besoin d'installer VSCode. 
-- VSCode est basé sur un code Open Source, mais les binaires distribués par Microsoft (*i.e.* ceux que vous installés) contiennent des composants *closed source*, notamment pour la télémétrie. Si vous ne voulez pas de ces composants, je vous invite à considérer plutôt [VSCodium](https://vscodium.com/#install). 
+- VSCode est basé sur un code Open Source, mais les binaires distribués par Microsoft (*i.e.* ceux que vous installez) contiennent des composants *closed source*, notamment pour la télémétrie. Si vous ne voulez pas de ces composants, je vous invite à considérer plutôt [VSCodium](https://vscodium.com/#install). 
 
 ### Sous windows 
 
@@ -50,11 +50,11 @@ Pour l'éditeur, [vous pouvez utiliser VSCode encore une fois](https://code.visu
 
 ## Compte sur la plateforme GitLab de l'UGA
 
-Vous aurez également besoin de vous créer un compte sur la plateforme gitlab de GRICAD qui est celle que nous allons utiliser pour la formation. 
+Vous aurez également besoin de vous créer un compte sur la plateforme gitlab de GRICAD, qui est celle que nous allons utiliser pour la formation. 
 
 ### Communauté de recherche grenobloise
 
-Si vous êtes dans un des établissements de recherche grneobloise, il y a de grandes chances que vous soyez dans le référentiel d'identités AGALAN. Pour accéder à la platfeorme GitLab de l'UGA, vous pouvez renseigenr votre login/mdp [à cette adresse](https://gricad-gitlab.univ-grenoble-alpes.fr/users/sign_in) (onglet LDAP UGA) et vous devriez pouvoir vous connecter directement.
+Si vous êtes dans un des établissements de recherche grenoblois, il y a de grandes chances que vous soyez dans le référentiel d'identités AGALAN. Pour accéder à la platfeorme GitLab de l'UGA, vous pouvez renseigenr votre login/mdp [à cette adresse](https://gricad-gitlab.univ-grenoble-alpes.fr/users/sign_in) (onglet LDAP UGA) et vous devriez pouvoir vous connecter directement.
 
 Si non, merci de suivre les indications ci-dessous, pour les externes. 
 
