@@ -27,3 +27,14 @@ Des ressources complémentaires pour explorer et approfondir les notions abordé
 * [Git workflow](https://git-scm.com/book/en/v2/Distributed-Git-Distributed-Workflows)
   [GitHub flow](https://guides.github.com/introduction/flow/)
   [OneFlow](https://www.endoflineblog.com/oneflow-a-git-branching-model-and-workflow)
+
+## La CI/CD
+
+### Sur les runners
+
+- [Doc d'installation Gitlab](https://docs.gitlab.com/runner/install/)
+- [Notes de blog](https://bdauvissat.gitlab.io/le-geek-montagnard/posts/divers/gitlab-runner/)
+
+### Sur le `.gitlab-ci.yml`
+
+- [La syntaxe de référence](https://docs.gitlab.com/ee/ci/yaml/)

@@ -30,7 +30,7 @@ Cette formation abordera les thèmes décrits ci-dessous. Les supports associés
   * Les issues
   * Fork & merge-request
 
-## Intégration et déploiement continu avec Gitlab
+## [Intégration et déploiement continu avec Gitlab](../../git_cnrs/slides/cicd.html)
 
 * Principes et mise en place
 * Création et publication d’un site web avec Gitlab
