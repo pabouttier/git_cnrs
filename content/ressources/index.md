@@ -38,3 +38,7 @@ Des ressources complémentaires pour explorer et approfondir les notions abordé
 ### Sur le `.gitlab-ci.yml`
 
 - [La syntaxe de référence](https://docs.gitlab.com/ee/ci/yaml/)
+
+## Divers
+
+   [Rapport ESR sur les forges logicielles](https://www.ouvrirlascience.fr/forges-de-lesr-definition-usages-limitations-rencontrees-et-analyse-des-besoins/)

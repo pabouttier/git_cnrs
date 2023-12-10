@@ -62,18 +62,18 @@ margin-left: 10%;
 ---
 # Plateformes de développements collaboratifs ou Forges
 
-*  **Forge** : ensemble de logiciels, le plus souvent réunis sur un site web, dont le but est de faciliter la travail collaboratif et la gestion de projets de développement au sens large
-*  Quelques exemples célèbre : gitlab, github, bitbucket, sourcesup, etc.
-* Aujourd'hui, nous utiliserons https://gricad-gitlab.univ-grenoble-alpes.fr
+-  **Forge** : ensemble de logiciels, le plus souvent réunis sur un site web, dont le but est de faciliter la travail collaboratif et la gestion de projets de développement au sens large
+- Quelques exemples célèbre : gitlab, github, bitbucket, sourcesup, etc.
+- Aujourd'hui, nous utiliserons https://gricad-gitlab.univ-grenoble-alpes.fr
 
 ---
 # À quoi ça sert ?
 
-* Développement de logiciels, scripts
-* Écriture collaborative (ou pas) de rapport, articles, manuscrit de thèse
-* Enseignement (cours, matériel pour TP, etc.)
-* Génération et déploiement de site web, documentation, notebook, HOWTO
-* Quelques mots-clés récurrents : travail collaboratif, mise à disposition, partage, ...
+- Développement de logiciels, scripts
+- Écriture collaborative (ou pas) de rapport, articles, manuscrit de thèse
+- Enseignement (cours, matériel pour TP, etc.)
+- Génération et déploiement de site web, documentation, notebook, HOWTO
+- Quelques mots-clés récurrents : travail collaboratif, mise à disposition, partage, ...
 
 ---
 # Forge : système de gestion de développement collaboratif
@@ -101,13 +101,13 @@ En pratique :
 --- 
 # Pourquoi utiliser une forge ?
 
-* Collaboration ”interne” au projet, facilite le travail collectif. 
+Collaboration ”interne” au projet, facilite le travail collectif. 
   * Espace de travail (**git**) et d’échanges (listes de diffusion ...) 
   * Statistiques, activité, état d’avancement du projet. 
   * Collaboration inter-organismes
   * Pérennisation du projet (**sauvegardes**, **doc** ...) 
   
-* Visibilité , diffusion du projet.
+Visibilité , diffusion du projet.
   * Interface de contacts et d’échanges utilisateurs/membres du projet (support en ligne, **documentation**, suivi de bugs ...).
   * Vue sur l’activité, la maturité du projet. 
   * **Téléchargement de code, de documents.**
@@ -115,12 +115,12 @@ En pratique :
 ---
 # Pourquoi utiliser une forge ?
 
-La plupart des outils pré-cités sont disponibles indépendamment des forges mais les principaux avantages de celles-ci sont:
-* un accès à tous les outils via un seul portail web ;
-* des outils bien intégrés , configurables pour chaque projet, avec une utilisation relativement intuitive ;
-* ne nécessite aucune installation préalable ;
-* un accès multi-site, multi-users ;
-* une prise en compte des différents profils d’utilisateurs (niveaux de droits différents).
+La plupart des outils pré-cités sont disponibles indépendamment des forges mais les principaux avantages de celles-ci sont :
+* **un accès à tous les outils** via un seul portail web ;
+* des outils bien intégrés, **configurables pour chaque projet**, avec une utilisation relativement intuitive ;
+* ne nécessite **aucune installation** préalable ;
+* un accès **multi-site, multi-users** ;
+* une prise en compte des différents **profils d’utilisateurs** (niveaux de droits différents).
 
 ---
 # Pourquoi utiliser une forge ? 
@@ -133,11 +133,11 @@ Utiliser ce genre d’outils permet de faciliter la vie de tout le monde, contri
 # Accès à une forge 
 
 GitHub, GitLab.com, Bitbucket, etc. :
-* Très fonctionnelles
-* Intègrent de nombreux outils
-* Grosses communautés 
-* Visibilité...
-* ...Mais ce ne sont pas des sites académiques : pb de droits, de confidentialité, tutelles pas contentes...
+- Très fonctionnelles
+- Intègrent de nombreux outils
+- Grosses communautés 
+- Visibilité...
+- ...Mais ce ne sont pas des sites académiques : pb de droits, de confidentialité, tutelles pas contentes, pérennité...
 
 ---
 # Accès à une forge
@@ -146,12 +146,12 @@ Pour l’enseignement et la recherche, la tendance est aujourd’hui à la mise
 
 Quelques exemples :
 * https://sourcesup.renater.fr/ : destinée aux établissements d’enseignement supérieur et aux organismes de recherche français. Basée sur le logiciel fusionforge.
-* Différentes forges basées sur le logiciel gitlab: https://gitlab.inria.fr, la forge Huma-num https://gitlab.huma-num.fr/, la forge ESR Grenoble, https://gricad-gitlab.univ-grenoble-alpes.fr
+* Différentes forges basées sur le logiciel gitlab: https://gitlab.inria.fr, la forge Huma-num https://gitlab.huma-num.fr/, la forge ESR Grenoble, https://gricad-gitlab.univ-grenoble-alpes.fr... 
 
 ---
 # Accès à une forge : 
 
-En pratique
+**En pratique**
 * Le choix d’une plateforme dépendra de votre projet, des gens impliqués et des habitudes de votre communauté.
 * Utiliser plusieurs plateformes n’est en général pas un problème : **leur utilisation est très semblable** et le transfert de projets de l’une à l’autre est relativement simple (au moins pour celles basées sur git).
 * Un bon choix (pour les Grenoblois) : gricad-gitlab. Locale (proximité du support), hébergement sur les serveurs universitaires, gratuite...
@@ -171,15 +171,15 @@ En pratique
 
 https://gricad-gitlab.univ-grenoble-alpes.fr
 
-* Communauté ESR Grenoble (Onglet **LDAP UGA**): accès complet à tous les outils
-* Comptes externes(Onglet **Standard**) : **création de groupes et projets non-autorisés**
+- Communauté ESR Grenoble (Onglet **LDAP UGA**): accès complet à tous les outils
+- Comptes externes(Onglet **Standard**) : **création de groupes et projets non-autorisés**
 
 ---
 # Le menu *Settings*
 
-* Le menu *Profile* : renseignez les différents champs
-* SSH keys : si vous êtes à l'aise avec les clés SSH
-* Notifications : possibilité de paramétrer le niveau de notifications 
+- Le menu *Profile* : renseignez les différents champs
+- SSH keys : si vous êtes à l'aise avec les clés SSH
+- Notifications : possibilité de paramétrer le niveau de notifications 
 
 --- 
 # Où trouver de l'aide ?
@@ -234,18 +234,18 @@ https://gricad-gitlab.univ-grenoble-alpes.fr/help
 ---
 # Groupes et projets, compléments
 
-* Un projet appartient à un namespace qui peut être :
-  * Votre login 
-  * Un groupe ou un sous-groupe
-* Groupe gitlab = organization github
-* Il est possible de demander à rejoindre un projet ou un groupe existant (via le lien **request access**)
+- Un projet appartient à un namespace qui peut être :
+  - Votre login 
+  - Un groupe ou un sous-groupe
+- Groupe gitlab = organization github
+- Il est possible de demander à rejoindre un projet ou un groupe existant (via le lien **request access**)
 
 ---
 # Mise en situation
 
-* une fois connectés à gricad-gitlab, demandez à rejoindre le groupe `git_cnrs`
-* Créez un projet `sandbox/votre_login` dans ce groupe et sous-groupe
-* Nous regarderons les permissions de chaque membre du projet en détail 
+- Une fois connectés à gricad-gitlab, demandez à rejoindre le groupe `git_cnrs`
+- Créez un projet `sandbox/votre_login` dans ce groupe et sous-groupe
+- Nous regarderons les permissions de chaque membre du projet en détail 
 
 ---
 # Groupes et projets, bonnes pratiques
