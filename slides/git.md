@@ -64,7 +64,7 @@ Your closest collaborator is you six months ago, but you don’t reply to emails
 ---
 # Un gestionnaire de quoi ?
 
-* Un gestionnaire de version de code vous permet de : 
+- Un gestionnaire de version de code vous permet de : 
   * **Construire l'historique**, comme bon vous semble, de toutes les évolutions d'un ensemble de fichiers (principalement textuels)
   * De **naviguer** dans cet historique
   * **d'expérimenter** des choses en parallèle, dans le même fichier, ou plusieurs
@@ -75,10 +75,10 @@ Your closest collaborator is you six months ago, but you don’t reply to emails
 
 Initialement prévus pour les **codes source logiciels**, leur versatilité actuelle en font des outils précieux pour gérer tous types de productions incluant du texte ayant vocation à évoluer dans le temps :
 
-* Documentation
-* Rapport technique, mémoires 
-* Sites webs ou présentations (comme celle-ci) 
-* ...
+- Documentation
+- Rapport technique, mémoires 
+- Sites webs ou présentations (comme celle-ci) 
+- ...
 
 --- 
 # Pourquoi Git ?
@@ -254,7 +254,7 @@ Avant chaque commit, il faut dire à git quels changements du dossier de travail
 ![bg right:50% fit](fig/git_staging.png)
 
 * Un bon commit est un commit **atomique**...
-* ...ou qui fait sens
+* ...ou qui fait sens (surtout dans le contexte collaboratif)
 * La zone de staging (index) permet de préparer le prochain commit
 
 --- 
@@ -420,8 +420,8 @@ Une branche est simplement un lien/pointeur vers un commit particulier (et tout 
 # Pourquoi créer des branches ? 
 
 * Pour tester une nouvelle fonctionnalité...
-* Corriger des bugs...
-* Revenir en arrière...
+* ...corriger des bugs...
+* ...revenir en arrière...
 * ...sans modifier la version actuelle qui est, malgré tout, satisfaisante et/ou utilisée
 * **Une nouvelle branche implique une divergence par rapport à notre branche principale.**
 
@@ -452,7 +452,7 @@ $ git checkout newtest # ou git switch newtest
 
 <center>
 
-![h:250 center](fig/branch2.png)
+![h:230 center](fig/branch2.png)
 
 </center>
 
