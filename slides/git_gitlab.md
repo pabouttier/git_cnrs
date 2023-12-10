@@ -241,10 +241,10 @@ Nous pouvons gérer entièrement notre dépôt git via l'interface web. La plupa
 ---
 # Mise en situation
 
-* Une fois votre projet `sandbox/votre_login` créé, créez via l'interface web : 
-  * une branche
-  * dans cette branche, un fichier nommé `votrelogin.md`
-  * Insérez ce que vous voulez dedans et faites un commit
+Une fois votre projet `sandbox/votre_login` créé, créez via l'interface web : 
+- une branche
+- dans cette branche, un fichier nommé `votrelogin.md`
+- Insérez ce que vous voulez dedans et faites un commit
 
 --- 
 # Récupérer le dépôt du serveur gitlab
@@ -292,7 +292,7 @@ Jusqu'à maintenant, chacun a travaillé dans son propre projet GitLab/dépôt G
 ---
 # Aparté sur le langage markdown
 
-Le Markdown est un langage très simple à apprendre, à lire et à écrire qui permet de formater du texte pour une page web. Sur Gitlab vous pouvez utiliser une version étendue du Markdown (gitlab flavored markdown) pour rédiger vos commentaires, issues, fichier d’aide etc.
+Le Markdown est un langage très simple à apprendre, à lire et à écrire qui permet de formater du texte (e.g. pour une page web). Sur Gitlab vous pouvez utiliser une version étendue du Markdown (gitlab flavored markdown) pour rédiger vos commentaires, issues, fichier d’aide etc.
 
 Documentation
 - https://docs.gitlab.com/ee/user/markdown.html
@@ -349,10 +349,10 @@ Jusqu'à maintenant, chacun a travaillé dans son propre projet GitLab/dépôt G
 ---
 # En pratique
 
-* Clonez tous le projet https://gricad-gitlab.univ-grenoble-alpes.fr/git_cnrs/common
-* Travaillez tous localement dans ce projet (commits, branches, etc)
-* Essayez tous d'éditer le README dans la branche `main`
-* Synchroniser vos modificatiosn avec le dépôt distant
+- Clonez tous le projet https://gricad-gitlab.univ-grenoble-alpes.fr/git_cnrs/common
+- Travaillez tous localement dans ce projet (commits, branches, etc)
+- Essayez tous d'éditer le README dans la branche `main`
+- Synchroniser vos modificatiosn avec le dépôt distant
 
 ---
 # Les workflows Git
@@ -493,7 +493,15 @@ Maintenant, vous devez pouvoir :
 ---
 # Ce que nous n'avons pas (encore ?) vu 
 
-* Le wiki
-* Les commandes complexes de Git pour retravailler l'historique (`git rebase`, `git cherry-picking`)
-* L'intégration continue et le déploiement continu
-* ...
+- Le wiki
+- Les commandes complexes de Git pour retravailler l'historique (`git rebase`, `git cherry-picking`)
+- L'intégration continue et le déploiement continu
+- ...
+
+---
+# Ce que nous n'avons pas (encore ?) vu 
+
+- Le wiki
+- Les commandes complexes de Git pour retravailler l'historique (`git rebase`, `git cherry-picking`)
+- ***L'intégration continue et le déploiement continu***
+- ...
