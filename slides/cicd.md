@@ -198,33 +198,33 @@ Il existe des systèmes (logiciels) qui permettent de **construire** des sites w
 ---
 # SGC, SSG, kezako ?
 
-* Les Générateurs de sites statiques (SSG en anglais) : 
-  * **Construit**, en quelques commandes/scripts, **un site web à partir de fichiers textes (contenu et templates/css) et medias**
-  * Le site construit est **statique** (pas d'interactions avec les visiteurs)
-  * Les données d'entrée sont stockées dans un système de fichiers (pas de BDD)
-  * Exemple : **hugo**, jekyll, pelican, gatsby, eleventy
+Les Générateurs de sites statiques (SSG en anglais) : 
+- **Construit**, en quelques commandes/scripts, **un site web à partir de fichiers textes (contenu et templates/css) et medias**
+- Le site construit est **statique** (pas d'interactions avec les visiteurs)
+- Les données d'entrée sont stockées dans un système de fichiers (pas de BDD)
+- Exemple : **hugo**, jekyll, pelican, gatsby, eleventy
 
 ---
 # Pourquoi nous intéressons-nous aux SSGs ? Pros
 
-* Les avantages 
-  * **Légéreté et rapidité** : Les pages HTML sont déjà écrites et stockées, il n'y a pas besoin de les construire à la volée
-  * **Sécurité** : faible surface d'attaque
-  * **Contrôle de version du contenu** : seuls des fichiers textes (et médias) sont nécessaires, donc on peut utiliser Git (et GitLab) pour gérer l'évolution du site. 
-  * **Maintenance légère** : comparé à un CMS, la maintenance du SSG en lui-même est nulle. 
-* Quand ne pas les utiliser : 
-  * Contenu fortement dynamique
-  * Traitement d'entrées utilisateurs (**e.g.** formulaires)
-  * Nécessitent quelques compétences (mais les CMS aussi)
-  * **Nota Bene** : Site statique ≠ [petit site](https://gricad-doc.univ-grenoble-alpes.fr/hpc/)
+Les avantages 
+* **Légéreté et rapidité** : Les pages HTML sont déjà écrites et stockées, il n'y a pas besoin de les construire à la volée
+* **Sécurité** : faible surface d'attaque
+* **Contrôle de version du contenu** : seuls des fichiers textes (et médias) sont nécessaires, donc on peut utiliser Git (et GitLab) pour gérer l'évolution du site. 
+* **Maintenance légère** : comparé à un CMS, la maintenance du SSG en lui-même est nulle. 
+Quand ne pas les utiliser : 
+* Contenu fortement dynamique
+* Traitement d'entrées utilisateurs (**e.g.** formulaires)
+* Nécessitent quelques compétences (mais les CMS aussi)
+* **Nota Bene** : Site statique ≠ [petit site](https://gricad-doc.univ-grenoble-alpes.fr/hpc/)
 
 ---
 # Les différents SSGs
 
-* Comme déjà mentionné, il existe pléthore de SSGs
+Comme déjà mentionné, il existe pléthore de SSGs
 * Ils peuvent être écrits dans différents langages : python, php, javascript, etc.
-* Fonctionnement souvent semblable
-* Nous utiliserons dorénavant [le SSG Hugo](https://gohugo.io/) : communauté active (plein d'avantages à ça), s'installe assez facilement sur toutes les plateformes, rapide, a pas mal de fonctionnalités, open source. 
+* Fonctionnements souvent semblables
+* Nous utiliserons aujourd'hui [le SSG Hugo](https://gohugo.io/) : communauté active (plein d'avantages à ça), s'installe assez facilement sur toutes les plateformes, rapide, a pas mal de fonctionnalités, open source. 
 
 ---
 <!-- _class: transition -->
@@ -234,15 +234,15 @@ Création du site
 ---
 # En pratique
 
-* Si possible, [installez hugo sur votre machine](https://gohugo.io/installation/)
-* [Clonez ce dépôt Git](https://gricad-gitlab.univ-grenoble-alpes.fr/git_cnrs/awesome-website)
-* Dans un terminal, placez-vous dans le dossier du dépôt et lancez `hugo serve`
-* Explorons ensemble le contenu du dépôt
+- Si possible, [installez hugo sur votre machine](https://gohugo.io/installation/)
+- [Clonez ce dépôt Git](https://gricad-gitlab.univ-grenoble-alpes.fr/git_cnrs/awesome-website)
+- Dans un terminal, placez-vous dans le dossier du dépôt et lancez `hugo serve`
+- Explorons ensemble le contenu du dépôt
 
 ---
 # Mais où sont nos pages web ? 
 
-* Jusqu'à maintenant, nous avons visualisé le site web généré par Hugo. Mais où est-il, en terme de fichiers ?
+Jusqu'à maintenant, nous avons visualisé le site web généré par Hugo. Mais où est-il, en terme de fichiers ?
 * Nulle part :) Pour générer les fichiers qui seront publiés par un serveur web, il faut lancer la commande `hugo -D`. 
 * Un nouveau dossier, dans votre projet, a été créé : `public/`. Allons y faire un tour. 
 
@@ -286,16 +286,16 @@ GitLab Pages:
 ---
 # Activation - Démo
 
-* Création du fichier `gitlab-ci.yml` (cf dépôt du site web)
-* Activation du runner (***Paramètres/CICD/Exécuteurs)
+- Création du fichier `gitlab-ci.yml` (cf. dépôt du site web)
+- Activation du runner (***Paramètres/CICD/Exécuteurs***)
 
 ---
 # Mise en pratique 
 
-* Sur le dépôt du site web, créez une branche à votre nom
-* Faites des modifs dans cette branche, dans les dossiers `content/en/home` et `content/fr/home`
-* Synchronisez vos modifications et quand vous êtes satisfaits faites une demande de fusion dans `main`
-* Reviewez une demande de fusion faites par quelqu'un d'autre. 
+- Sur le dépôt du site web, créez une branche à votre nom
+- Faites des modifs dans cette branche, dans les dossiers `content/en/home` et `content/fr/home`
+- Synchronisez vos modifications et quand vous êtes satisfaits faites une demande de fusion dans `main`
+- Reviewez une demande de fusion faites par quelqu'un d'autre. 
 
 ---
 <!-- _class: transition -->
