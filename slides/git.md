@@ -358,7 +358,7 @@ Plusieurs remarques :
 Git permet non seulement de construire un historique mais également de voyager dedans.
 Nous pouvons retrouver n'importe quel état de tout ou partie du dépôt : 
 ```shell
-$ git checkout <hash de commit> <nomfichier> # Va remettre le fichier dans l'état où il était au commit indiqué
+$ git checkout <hash de commit> -- <nomfichier> # Va remettre le fichier dans l'état où il était au commit indiqué
 $ git checkout <hash de commit> # Remet tout le dépôt dans l'état où il était au commit indiqué
 ```
 **Attention** : on ne *revient* pas au commit indiqué ! On remet les fichiers dans l'état où ils étaient auparavant. Si l'on veut continuer avec cet instantané : `git add ...`et `git commit -m ...`.
