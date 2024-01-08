@@ -18,7 +18,7 @@ margin-left: 10%;
 # Git & GitLab
 ## Travailler avec les dépôts distants
 
-### GitLab@CNRS - 11-12/12/2023
+### GitLab@CNRS - 09-10/01/2024
 #### [Pierre-Antoine Bouttier](mailto:pierre-antoine.bouttier@univ-grenoble-alpes.fr)
 
 ---
@@ -57,11 +57,11 @@ Pour cela nous allons **utiliser des dépots distants/remote** : un (ou plusieu
 
 </center>
 
-* Connexion entre dépôts : ajout ou copie (**clone**) d'un dépôt distant
-* Développements indépendants de chaque dépôt
-* Intégration des modifs du dépôt distant (**pull**)
-* Transfert de vos modifs vers le dépôt distant (**push**)
-* Éventuellement, mêmes opérations de la part d'autres utilisateurs
+- Connexion entre dépôts : ajout ou copie (**clone**) d'un dépôt distant
+- Développements indépendants de chaque dépôt
+- Intégration des modifs du dépôt distant (**pull**)
+- Transfert de vos modifs vers le dépôt distant (**push**)
+- Éventuellement, mêmes opérations de la part d'autres utilisateurs
 
 ---
 # Connexion avec un dépôt distant
@@ -304,17 +304,17 @@ Documentation
 **L'apprentissage de l'écriture en markdown** est très rapide. Prenez ce temps, vous verrez que c'est à la fois très pratique et très utilisé. 
 
 Les avantages du markdown :
-* Basé sur des fichiers textes bruts, donc très interopérables (contrairement aux .doc, .docx, par exemple), et facile à mettre dans un dépôt git/gitlab.
-* Des règles très simples
-* Facile à convertir : html, pdf, jpg, png, etc...
+- Basé sur des fichiers textes bruts, donc très interopérables (contrairement aux .doc, .docx, par exemple), et facile à mettre dans un dépôt git/gitlab.
+- Des règles très simples
+- Facile à convertir : html, pdf, jpg, png, etc...
 
 ---
 # Le langage markdown
 
-* Au cours de la formation, vous avez pu voir des fichiers dont le nom se finissait par `.md` : c'est l'extension par défaut pour le markdown. 
-* Un fichier markdown est un fichier texte brut avec quelques règles syntaxiques.
-* Si vous écrivant un document markdown dans votre dépôt gitlab, Gitlab l'affichera formatté. 
-* Il est très conseillé, pour chaque projet git/gitlab, d'écrire un fichier README.md qui décrira le projet et ce qu'il y a savoir à son propos.
+- Au cours de la formation, vous avez pu voir des fichiers dont le nom se finissait par `.md` : c'est l'extension par défaut pour le markdown. 
+- Un fichier markdown est un fichier texte brut avec quelques règles syntaxiques.
+- Si vous écrivant un document markdown dans votre dépôt gitlab, Gitlab l'affichera formatté. 
+- Il est très conseillé, pour chaque projet git/gitlab, d'écrire un fichier README.md qui décrira le projet et ce qu'il y a savoir à son propos.
 
 ---
 # Le langage markdown
@@ -407,10 +407,10 @@ Comment fusionner proprement dans la branche `main`?
 Lorsque vous avez fini de travailler dans votre branche et que vous voulez intégrer vos modifications à la branche principale, un outil GitLab vous permet de le faire "proprement" : ***les merge-requests*** (ou demandes de fusion). 
 
 **Merge-request** : sur GitLab, soumission d'une demande de fusion d'une branche dans un autre. 
-* Réserver la branche main pour la version principale et stable du projet
-* Isoler les essais/implémentations de nouvelles fonctionnalités, corrections d'un bug etc.
-* Informer les membres du projets, demander une revision, un avis
-* ...
+- Réserver la branche main pour la version principale et stable du projet
+- Isoler les essais/implémentations de nouvelles fonctionnalités, corrections d'un bug etc.
+- Informer les membres du projets, demander une revision, un avis
+- ...
 
 ---
 <!-- _class: transition -->
@@ -486,9 +486,9 @@ Conclusion
 # En résumé
 
 Maintenant, vous devez pouvoir : 
-* Appréhender la notion de dépôts distants
-* Lier un dépôt Git avec un projet GitLab (branches par branches)
-* Connaître les outils majeurs de Git et de GitLab pour travailler de façon collaborative
+- Appréhender la notion de dépôts distants
+- Lier un dépôt Git avec un projet GitLab (branches par branches)
+- Connaître les outils majeurs de Git et de GitLab pour travailler de façon collaborative
 
 ---
 # Ce que nous n'avons pas (encore ?) vu 

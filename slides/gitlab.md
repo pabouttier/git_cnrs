@@ -17,7 +17,7 @@ margin-left: 10%;
 # Introduction à GitLab
 ## Cours et mise en pratique
 
-### GitLab@CNRS - 11-12/12/2023
+### GitLab@CNRS - 09-10/01/2024
 #### [Pierre-Antoine Bouttier](mailto:pierre-antoine.bouttier@univ-grenoble-alpes.fr)
 
 ---
@@ -91,36 +91,36 @@ En pratique :
 ---
 # Les fonctionnalités classiques
 
-* **Gestion de versions** et partage de code (au sens large)
-* Gestion électronique de document : édition en ligne, suivi d'historique
-* Suivi de problèmes, de tests et intégration continue
-* **partage de l'information, liste de diffusion, espace d'échanges**
-* **Sauvegarde**
-* Hébergement/génération de pages web
+- **Gestion de versions** et partage de code (au sens large)
+- Gestion électronique de document : édition en ligne, suivi d'historique
+- Suivi de problèmes, de tests et intégration continue
+- **partage de l'information, liste de diffusion, espace d'échanges**
+- **Sauvegarde**
+- Hébergement/génération de pages web
 
 --- 
 # Pourquoi utiliser une forge ?
 
 Collaboration ”interne” au projet, facilite le travail collectif. 
-  * Espace de travail (**git**) et d’échanges (listes de diffusion ...) 
-  * Statistiques, activité, état d’avancement du projet. 
-  * Collaboration inter-organismes
-  * Pérennisation du projet (**sauvegardes**, **doc** ...) 
+  - Espace de travail (**git**) et d’échanges (listes de diffusion ...) 
+  - Statistiques, activité, état d’avancement du projet. 
+  - Collaboration inter-organismes
+  - Pérennisation du projet (**sauvegardes**, **doc** ...) 
   
 Visibilité , diffusion du projet.
-  * Interface de contacts et d’échanges utilisateurs/membres du projet (support en ligne, **documentation**, suivi de bugs ...).
-  * Vue sur l’activité, la maturité du projet. 
-  * **Téléchargement de code, de documents.**
+  - Interface de contacts et d’échanges utilisateurs/membres du projet (support en ligne, **documentation**, suivi de bugs ...).
+  - Vue sur l’activité, la maturité du projet. 
+  - **Téléchargement de code, de documents.**
 
 ---
 # Pourquoi utiliser une forge ?
 
 La plupart des outils pré-cités sont disponibles indépendamment des forges mais les principaux avantages de celles-ci sont :
-* **un accès à tous les outils** via un seul portail web ;
-* des outils bien intégrés, **configurables pour chaque projet**, avec une utilisation relativement intuitive ;
-* ne nécessite **aucune installation** préalable ;
-* un accès **multi-site, multi-users** ;
-* une prise en compte des différents **profils d’utilisateurs** (niveaux de droits différents).
+- **un accès à tous les outils** via un seul portail web ;
+- des outils bien intégrés, **configurables pour chaque projet**, avec une utilisation relativement intuitive ;
+- ne nécessite **aucune installation** préalable ;
+- un accès **multi-site, multi-users** ;
+- une prise en compte des différents **profils d’utilisateurs** (niveaux de droits différents).
 
 ---
 # Pourquoi utiliser une forge ? 
@@ -145,16 +145,16 @@ GitHub, GitLab.com, Bitbucket, etc. :
 Pour l’enseignement et la recherche, la tendance est aujourd’hui à la mise en place de plateformes mutualisées dans les organismes de recherche et/ou les communautés. On note également une évolution des outils (passage des forges “à l’ancienne” vers des forges basées sur les logiciels github/gitlab).
 
 Quelques exemples :
-* https://sourcesup.renater.fr/ : destinée aux établissements d’enseignement supérieur et aux organismes de recherche français. Basée sur le logiciel fusionforge.
-* Différentes forges basées sur le logiciel gitlab: https://gitlab.inria.fr, la forge Huma-num https://gitlab.huma-num.fr/, la forge ESR Grenoble, https://gricad-gitlab.univ-grenoble-alpes.fr... 
+- https://sourcesup.renater.fr/ : destinée aux établissements d’enseignement supérieur et aux organismes de recherche français. Basée sur le logiciel fusionforge.
+- Différentes forges basées sur le logiciel gitlab: https://gitlab.inria.fr, la forge Huma-num https://gitlab.huma-num.fr/, la forge ESR Grenoble, https://gricad-gitlab.univ-grenoble-alpes.fr... 
 
 ---
 # Accès à une forge : 
 
 **En pratique**
-* Le choix d’une plateforme dépendra de votre projet, des gens impliqués et des habitudes de votre communauté.
-* Utiliser plusieurs plateformes n’est en général pas un problème : **leur utilisation est très semblable** et le transfert de projets de l’une à l’autre est relativement simple (au moins pour celles basées sur git).
-* Un bon choix (pour les Grenoblois) : gricad-gitlab. Locale (proximité du support), hébergement sur les serveurs universitaires, gratuite...
+- Le choix d’une plateforme dépendra de votre projet, des gens impliqués et des habitudes de votre communauté.
+- Utiliser plusieurs plateformes n’est en général pas un problème : **leur utilisation est très semblable** et le transfert de projets de l’une à l’autre est relativement simple (au moins pour celles basées sur git).
+- Un bon choix (pour les Grenoblois) : gricad-gitlab. Locale (proximité du support), hébergement sur les serveurs universitaires, gratuite...
 
 ---
 # TOC
@@ -210,13 +210,13 @@ https://gricad-gitlab.univ-grenoble-alpes.fr/help
 
 # Projets et Groupes
 
-* **Projet** 
-  * Un espace qui vous permettra d'héberger, de sauvegarder et de partager un ensemble de fichiers
-  * Un ensemble de participants avec des droits réglables individuellement
-  * Une interface de gestion/configuration pour des outils spécifiques au projet
+- **Projet** 
+  - Un espace qui vous permettra d'héberger, de sauvegarder et de partager un ensemble de fichiers
+  - Un ensemble de participants avec des droits réglables individuellement
+  - Une interface de gestion/configuration pour des outils spécifiques au projet
 
-* **Groupe** 
-  * Ensemble de projets et/ou de sous-groupes, associés à un ensemble d'utilisateurs
+- **Groupe** 
+  - Ensemble de projets et/ou de sous-groupes, associés à un ensemble d'utilisateurs
 
 ---
 # Création de groupes et de projets
@@ -250,9 +250,9 @@ https://gricad-gitlab.univ-grenoble-alpes.fr/help
 ---
 # Groupes et projets, bonnes pratiques
 
-* **Ne pas négliger l’étape d’organisation et de nommage des groupes et projets** : on peut très facilement renommer, déplacer un groupe ou un projet mais nécessairement avec un impact sur l’affichage/la visibilité du projet (pages web, références etc).
-* **Prenez le temps de configurer correctement** la liste des membres, leurs droits, les rôles, dates d’expiration de participation etc.
-* **Membres d’un groupe : n’ajoutez que les personnes susceptibles de participer à tous les projets du groupe.** Dans le cas contraire privilégiez un accès par projet.
+- **Ne pas négliger l’étape d’organisation et de nommage des groupes et projets** : on peut très facilement renommer, déplacer un groupe ou un projet mais nécessairement avec un impact sur l’affichage/la visibilité du projet (pages web, références etc).
+- **Prenez le temps de configurer correctement** la liste des membres, leurs droits, les rôles, dates d’expiration de participation etc.
+- **Membres d’un groupe : n’ajoutez que les personnes susceptibles de participer à tous les projets du groupe.** Dans le cas contraire privilégiez un accès par projet.
 
 ---
 # Projet, hébergement de fichiers et gestionnaire de version

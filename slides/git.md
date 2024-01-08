@@ -17,7 +17,7 @@ margin-left: 10%;
 # Introduction à Git
 ## Cours et mise en pratique
 
-### GitLab@CNRS - 11-12/12/2023
+### GitLab@CNRS - 09-10/01/2024
 #### [Pierre-Antoine Bouttier](mailto:pierre-antoine.bouttier@univ-grenoble-alpes.fr)
 
 ---
@@ -65,10 +65,10 @@ Your closest collaborator is you six months ago, but you don’t reply to emails
 # Un gestionnaire de quoi ?
 
 - Un gestionnaire de version de code vous permet de : 
-  * **Construire l'historique**, comme bon vous semble, de toutes les évolutions d'un ensemble de fichiers (principalement textuels)
-  * De **naviguer** dans cet historique
-  * **d'expérimenter** des choses en parallèle, dans le même fichier, ou plusieurs
-  * Et d'atténuer drastiquement la peur de *détruire des trucs*
+  - **Construire l'historique**, comme bon vous semble, de toutes les évolutions d'un ensemble de fichiers (principalement textuels)
+  - De **naviguer** dans cet historique
+  - **d'expérimenter** des choses en parallèle, dans le même fichier, ou plusieurs
+  - Et d'atténuer drastiquement la peur de *détruire des trucs*
 
 ---
 # Les gestionnaires de versions de code (CVS en anglais)
@@ -253,9 +253,9 @@ Avant chaque commit, il faut dire à git quels changements du dossier de travail
 
 ![bg right:50% fit](fig/git_staging.png)
 
-* Un bon commit est un commit **atomique**...
-* ...ou qui fait sens (surtout dans le contexte collaboratif)
-* La zone de staging (index) permet de préparer le prochain commit
+- Un bon commit est un commit **atomique**...
+- ...ou qui fait sens (surtout dans le contexte collaboratif)
+- La zone de staging (index) permet de préparer le prochain commit
 
 --- 
 # Il faut travailler fichier par fichier ? 
@@ -280,10 +280,10 @@ $ git commit -am "Je sauvegarde les modifs des fichiers que Git connaît déjà"
 # Au sujet des commits 
 
 Les commits sont l'unité atomique d'un dépôt git : 
-* **Ne négligez pas** (tout le temps) **le message qui l'accompagne**
-* **Il n'y a pas de pratique universelle** sur ce que l'on met dans un commit : une fonctionnalité, une correction, un nouveau paragraphe, un commentaire, etc. 
-* Si travail à plusieurs, il est important **de se mettre d'accord sur les pratiques communes** (cf. worflows `git`)
-* Les commits sont ce qui va vous permettre de voyager dans le temps : **à vous de gérer les étapes**  
+- **Ne négligez pas** (tout le temps) **le message qui l'accompagne**
+- **Il n'y a pas de pratique universelle** sur ce que l'on met dans un commit : une fonctionnalité, une correction, un nouveau paragraphe, un commentaire, etc. 
+- Si travail à plusieurs, il est important **de se mettre d'accord sur les pratiques communes** (cf. worflows `git`)
+- Les commits sont ce qui va vous permettre de voyager dans le temps : **à vous de gérer les étapes**  
 
 --- 
 # TL;DR
@@ -299,6 +299,7 @@ $ touch new_file.txt # On créée un fichier
 $ git add new_file.txt
 $ git commit -m "Ma troisième version"
 ```
+
 ---
 # Un petit mot sur les fichiers supprimés
 
@@ -348,9 +349,9 @@ Maintenant que nous avons construit un historique, nous voulons le consulter :
 $ git log
 ```
 Plusieurs remarques : 
-* Chaque commit est unique et clairement identifié par une suite barbare de caractères alphanumériques (**hash**).   
-* Le dernier commit en date est pointé comme le `HEAD` de la branche `main`...
-* Nous voyons l'importance ici des messages de commits : **ils mettent du sens dans l'historique**
+- Chaque commit est unique et clairement identifié par une suite barbare de caractères alphanumériques (**hash**).   
+- Le dernier commit en date est pointé comme le `HEAD` de la branche `main`...
+- Nous voyons l'importance ici des messages de commits : **ils mettent du sens dans l'historique**
 
 ---
 # Retour vers le futur
@@ -419,11 +420,11 @@ Une branche est simplement un lien/pointeur vers un commit particulier (et tout 
 ---
 # Pourquoi créer des branches ? 
 
-* Pour tester une nouvelle fonctionnalité...
-* ...corriger des bugs...
-* ...revenir en arrière...
-* ...sans modifier la version actuelle qui est, malgré tout, satisfaisante et/ou utilisée
-* **Une nouvelle branche implique une divergence par rapport à notre branche principale.**
+- Pour tester une nouvelle fonctionnalité...
+- ...corriger des bugs...
+- ...revenir en arrière...
+- ...sans modifier la version actuelle qui est, malgré tout, satisfaisante et/ou utilisée
+- **Une nouvelle branche implique une divergence par rapport à notre branche principale.**
 
 --- 
 # Créer et utiliser une branche (1/4)
@@ -558,42 +559,42 @@ Un peu de pratique
 --- 
 # À retenir - les commandes essentielles
 
-* **Dépôt git** : dossier regroupant l'ensemble des fichiers et dossiers que vous voulez versionner et des fichiers/bases de données dont git a besoin pour fonctionner. Création du dépôt dans un dossier existant : `git init`
-* **3 états** pour un fichier dans Git : 
-  * **Modifié** : fichier crée/modifié depuis la création du dépôt ou depuis le dernier commit. Pour surveiller ce fichier avec git, `git add`
-  * **Indexé/staged** : modifications prêtes à être enregistrées lors du prochain commit `git commit`
-  * **Fichier OK** : fichier est déjà dans la base de Git et n'a pas été modifié depuis le dernier commit
-* `git status` vous donne toutes les informations sur l'état de votre dépôt. 
+- **Dépôt git** : dossier regroupant l'ensemble des fichiers et dossiers que vous voulez versionner et des fichiers/bases de données dont git a besoin pour fonctionner. Création du dépôt dans un dossier existant : `git init`
+- **3 états** pour un fichier dans Git : 
+  - **Modifié** : fichier crée/modifié depuis la création du dépôt ou depuis le dernier commit. Pour surveiller ce fichier avec git, `git add`
+  - **Indexé/staged** : modifications prêtes à être enregistrées lors du prochain commit `git commit`
+  - **Fichier OK** : fichier est déjà dans la base de Git et n'a pas été modifié depuis le dernier commit
+- `git status` vous donne toutes les informations sur l'état de votre dépôt. 
 
 ---
 # À retenir - les branches
 
-* **Une branche est un pointeur/une étiquette vers un commit spécifique**, lui-même le résultat d'un empilement de commit (instantané de l'état des fichiers de votre dépôt)
-* On peut créer une nouvelle branche à l'aide de la commande `git branch <nombranche>` (ou `git switch -C`)
-* On liste les branches à l'aide de la commande `git branch`
-* On change de branche courante à l'aide de `git checkout <nombranche>`(ou `git switch`)
-* On merge la branche Y dans la branche X, en se positionnant dans la branche X et en faisant `git merge Y`
-* On supprime une branche à l'aide de `git branch -d <nombranche>`
+- **Une branche est un pointeur/une étiquette vers un commit spécifique**, lui-même le résultat d'un empilement de commit (instantané de l'état des fichiers de votre dépôt)
+- On peut créer une nouvelle branche à l'aide de la commande `git branch <nombranche>` (ou `git switch -C`)
+- On liste les branches à l'aide de la commande `git branch`
+- On change de branche courante à l'aide de `git checkout <nombranche>`(ou `git switch`)
+- On merge la branche Y dans la branche X, en se positionnant dans la branche X et en faisant `git merge Y`
+- On supprime une branche à l'aide de `git branch -d <nombranche>`
 
 ---
 # Les bonnes pratiques
 
-* Git fournit un ensemble de concepts et d'outils pour construire l'historique de votre travail
-* Il n'y a pas UNE bonne façon de les utiliser
-* Veillez cependant : 
-  * À faire des commits *régulièrement*
-  * À faire des messages de commits explicites, *i.e.* **donner du sens** à votre historique
-  * Ne pas rechigner à **créer des branches** quand c'est nécessaire...
-  * ...Et à les supprimer quand elles ne sont plus utiles.
+- Git fournit un ensemble de concepts et d'outils pour construire l'historique de votre travail
+- Il n'y a pas UNE bonne façon de les utiliser
+- Veillez cependant : 
+  - À faire des commits *régulièrement*
+  - À faire des messages de commits explicites, *i.e.* **donner du sens** à votre historique
+  - Ne pas rechigner à **créer des branches** quand c'est nécessaire...
+  - ...Et à les supprimer quand elles ne sont plus utiles.
 
 ---
 # Ce que je n'ai pas présenté
 
-* `git diff`, `git tag`
-* Des commandes compliquées (e.g. `git rebase`, `git cherry-pick`) pour réorganiser l'historique
-* Comment travailler à plusieurs (peut-être dans la suite ?...)
-* **Les alias, le .gitignore, etc.**
-* [**Les interfaces graphiques à git**](https://git-scm.com/downloads/guis)
+- `git diff`, `git tag`
+- Des commandes compliquées (e.g. `git rebase`, `git cherry-pick`) pour réorganiser l'historique
+- Comment travailler à plusieurs (peut-être dans la suite ?...)
+- **Les alias, le .gitignore, etc.**
+- [**Les interfaces graphiques à git**](https://git-scm.com/downloads/guis)
 
 ---
 

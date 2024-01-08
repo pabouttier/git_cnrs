@@ -16,7 +16,7 @@ margin-left: 10%;
 # L'intégration/déploiement continue
 ## Automatisation des tâches avec GitLab
 
-### GitLab@CNRS - 11-12/12/2023
+### GitLab@CNRS - 09-10/01/2024
 #### [Pierre-Antoine Bouttier](mailto:pierre-antoine.bouttier@univ-grenoble-alpes.fr)
 
 ---
@@ -45,19 +45,19 @@ margin-left: 10%;
 # Qu'est ce que c'est ?
 
 **Concept**
-* Continuous Integration : pratique consistant **à associer à chaque modification des sources** une séries d'opérations qui seront exécutées automatiquement.
-* Continuous deployment : pratique consistant **à automatiser les actions de déploiement** d'applications
+- Continuous Integration : pratique consistant **à associer à chaque modification des sources** une séries d'opérations qui seront exécutées automatiquement.
+- Continuous deployment : pratique consistant **à automatiser les actions de déploiement** d'applications
 
 ---
 # Intérêts
 
-* S’assurer que le résultat de nouvelles modifications n’introduit pas de régression du code
-* Anticiper différents types d’utilisation du code.
-* Faciliter les développements au quotidien, les collaborations
-* Identifier et corriger les erreurs plus facilement et plus rapidement
-* Anticiper, planifier, tester différents environnements (debug/release, OS, paramètres ...)
-* Déployer le code, fournir des "images" prêtes à l'emploi (Docker, Singularity ...)
-* Économiser du temps pour les développeurs, réduire le "time-to-release" ou le "time-to-new-features"
+- S’assurer que le résultat de nouvelles modifications n’introduit pas de régression du code
+- Anticiper différents types d’utilisation du code.
+- Faciliter les développements au quotidien, les collaborations
+- Identifier et corriger les erreurs plus facilement et plus rapidement
+- Anticiper, planifier, tester différents environnements (debug/release, OS, paramètres ...)
+- Déployer le code, fournir des "images" prêtes à l'emploi (Docker, Singularity ...)
+- Économiser du temps pour les développeurs, réduire le "time-to-release" ou le "time-to-new-features"
 
 ---
 # Par quelle magie ?
@@ -102,15 +102,15 @@ Les exécuteurs sont des processus, qui tournent sur une machine (virtuelle ou n
  
 ### Les exécuteurs partagés
 
-* Installés et maintenus par les adminitsrateurs de la plateforme Gitlab
-* **Disponibles pour tous les projets de la plateforme**
-* Comme partagés, ils peuvent parfois mettre du temps à détecter les modifications et lancer les tâches
+- Installés et maintenus par les adminitsrateurs de la plateforme Gitlab
+- **Disponibles pour tous les projets de la plateforme**
+- Comme partagés, ils peuvent parfois mettre du temps à détecter les modifications et lancer les tâches
 
 ### Les exécuteurs dédiés
 
-* [Installation sur une machine dédiée par vos soins](https://docs.gitlab.com/runner/install/)
-* Dédié à vos projets, donc **rapides et toujours disponibles**
-* Et peuvent gérer des tâches spécifiques (contrôle de l'environnement sur la machine sur laquelle ils sont installées)
+- [Installation sur une machine dédiée par vos soins](https://docs.gitlab.com/runner/install/)
+- Dédié à vos projets, donc **rapides et toujours disponibles**
+- Et peuvent gérer des tâches spécifiques (contrôle de l'environnement sur la machine sur laquelle ils sont installées)
 
 ---
 # Le fichier `.gitlab-ci.yml`
@@ -167,15 +167,15 @@ Nous utiliserons les runners partagés et je vous fournirai les fichiers `.gitla
 ---
 # Comment fait-on un site web ? 
 
-* Il faut d'une part le construire... :
-  * Avoir du contenu (texte, audio, vidéo, images, etc.)...
-  * ...agencé suivant des standards qui permettent à tout le monde d'y accéder (via leurs navigateurs) : CSS (pour la forme), HTML (pour la structure)...
-  * ...le tout agrémenté de fonctions supplémentaires, implémentées dans des langages de programmation : Javascript, PHP, Python, SQL, etc.  
+- Il faut d'une part le construire... :
+  - Avoir du contenu (texte, audio, vidéo, images, etc.)...
+  - ...agencé suivant des standards qui permettent à tout le monde d'y accéder (via leurs navigateurs) : CSS (pour la forme), HTML (pour la structure)...
+  - ...le tout agrémenté de fonctions supplémentaires, implémentées dans des langages de programmation : Javascript, PHP, Python, SQL, etc.  
 
-* ...puis le mettre à disposition : 
-  * À l'aide d'un serveur web : Apache, Nginx, etc
-  * Qui tourne sur un ordinateur qu'il faut bien configurer...
-  * ...y compris en terme de réseau
+- ...puis le mettre à disposition : 
+  - À l'aide d'un serveur web : Apache, Nginx, etc
+  - Qui tourne sur un ordinateur qu'il faut bien configurer...
+  - ...y compris en terme de réseau
 
 ---
 # Va-t-on apprendre tout ça en quelques minutes ?
@@ -189,11 +189,11 @@ Construire et publier un site web sur mesure est un métier (parfois, plusieurs)
 
 Il existe des systèmes (logiciels) qui permettent de **construire** des sites webs (=pages HTML) **simplement**
 
-* Les Systèmes de Gestion de Contenu (SGC ou CMS en anglais) : 
-  * Ensemble d'outils pour créer et gérer des sites web complets et complexes
-  * Souvent **dynamiques**, i.e. le rendu (=pages HTML) est généré lorsque le visiteur le consulte
-  * Nécessitent, quasiment tout le temps, des bases de données
-  * Exemples : wordpress, drupal
+- Les Systèmes de Gestion de Contenu (SGC ou CMS en anglais) : 
+  - Ensemble d'outils pour créer et gérer des sites web complets et complexes
+  - Souvent **dynamiques**, i.e. le rendu (=pages HTML) est généré lorsque le visiteur le consulte
+  - Nécessitent, quasiment tout le temps, des bases de données
+  - Exemples : wordpress, drupal
 
 ---
 # SGC, SSG, kezako ?
@@ -208,23 +208,23 @@ Les Générateurs de sites statiques (SSG en anglais) :
 # Pourquoi nous intéressons-nous aux SSGs ? Pros
 
 Les avantages 
-* **Légéreté et rapidité** : Les pages HTML sont déjà écrites et stockées, il n'y a pas besoin de les construire à la volée
-* **Sécurité** : faible surface d'attaque
-* **Contrôle de version du contenu** : seuls des fichiers textes (et médias) sont nécessaires, donc on peut utiliser Git (et GitLab) pour gérer l'évolution du site. 
-* **Maintenance légère** : comparé à un CMS, la maintenance du SSG en lui-même est nulle. 
+- **Légéreté et rapidité** : Les pages HTML sont déjà écrites et stockées, il n'y a pas besoin de les construire à la volée
+- **Sécurité** : faible surface d'attaque
+- **Contrôle de version du contenu** : seuls des fichiers textes (et médias) sont nécessaires, donc on peut utiliser Git (et GitLab) pour gérer l'évolution du site. 
+- **Maintenance légère** : comparé à un CMS, la maintenance du SSG en lui-même est nulle. 
 Quand ne pas les utiliser : 
-* Contenu fortement dynamique
-* Traitement d'entrées utilisateurs (**e.g.** formulaires)
-* Nécessitent quelques compétences (mais les CMS aussi)
-* **Nota Bene** : Site statique ≠ [petit site](https://gricad-doc.univ-grenoble-alpes.fr/hpc/)
+- Contenu fortement dynamique
+- Traitement d'entrées utilisateurs (**e.g.** formulaires)
+- Nécessitent quelques compétences (mais les CMS aussi)
+- **Nota Bene** : Site statique ≠ [petit site](https://gricad-doc.univ-grenoble-alpes.fr/hpc/)
 
 ---
 # Les différents SSGs
 
 Comme déjà mentionné, il existe pléthore de SSGs
-* Ils peuvent être écrits dans différents langages : python, php, javascript, etc.
-* Fonctionnements souvent semblables
-* Nous utiliserons aujourd'hui [le SSG Hugo](https://gohugo.io/) : communauté active (plein d'avantages à ça), s'installe assez facilement sur toutes les plateformes, rapide, a pas mal de fonctionnalités, open source. 
+- Ils peuvent être écrits dans différents langages : python, php, javascript, etc.
+- Fonctionnements souvent semblables
+- Nous utiliserons aujourd'hui [le SSG Hugo](https://gohugo.io/) : communauté active (plein d'avantages à ça), s'installe assez facilement sur toutes les plateformes, rapide, a pas mal de fonctionnalités, open source. 
 
 ---
 <!-- _class: transition -->
@@ -243,8 +243,8 @@ Création du site
 # Mais où sont nos pages web ? 
 
 Jusqu'à maintenant, nous avons visualisé le site web généré par Hugo. Mais où est-il, en terme de fichiers ?
-* Nulle part :) Pour générer les fichiers qui seront publiés par un serveur web, il faut lancer la commande `hugo -D`. 
-* Un nouveau dossier, dans votre projet, a été créé : `public/`. Allons y faire un tour. 
+- Nulle part :) Pour générer les fichiers qui seront publiés par un serveur web, il faut lancer la commande `hugo -D`. 
+- Un nouveau dossier, dans votre projet, a été créé : `public/`. Allons y faire un tour. 
 
 ---
 <!-- _class: transition -->
@@ -266,11 +266,11 @@ Nous allons voir comment installer et configurer un serveur web apache sur un se
 # GitLab Pages, notre sauveur
 
 GitLab Pages: 
-* Fonctionnalité disponible pour chaque projet GitLab
-* **Activable en activant la CI/CD sur votre projet**
-* Permet de (construire) et publier un site web (activation d'un serveur web)
-* Par défaut, utilise le dossier `/public`de votre projet et sert les pages web qu'il contient. 
-* Acccesible, sur la page de votre projet en cliquant sur ***Déploiements/Pages***
+- Fonctionnalité disponible pour chaque projet GitLab
+- **Activable en activant la CI/CD sur votre projet**
+- Permet de (construire) et publier un site web (activation d'un serveur web)
+- Par défaut, utilise le dossier `/public`de votre projet et sert les pages web qu'il contient. 
+- Acccesible, sur la page de votre projet en cliquant sur ***Déploiements/Pages***
 
 ---
 # TOC
@@ -305,10 +305,10 @@ Conclusion
 ---
 # La CI/CD
 
-* Outil GitLab pour automatiser des tâches, déclenché lors de modifications du dépôt Git
-* Nous l'avons mis en place pour construire et publier un site web...
-* ... Mais les usages et intérêts sont nombreux ! 
-* Il existe beaucoup d'exemples de CI/CD sur le web, n'hésitez à fouiller pour trouver votre bonheur ! 
+- Outil GitLab pour automatiser des tâches, déclenché lors de modifications du dépôt Git
+- Nous l'avons mis en place pour construire et publier un site web...
+- ... Mais les usages et intérêts sont nombreux ! 
+- Il existe beaucoup d'exemples de CI/CD sur le web, n'hésitez à fouiller pour trouver votre bonheur ! 
 
 ---
 <!-- _class: transition -->
