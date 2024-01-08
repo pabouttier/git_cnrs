@@ -20,12 +20,10 @@ Dans la suite, pour chaque plateforme, je vous propose d'installer **Visual Stud
 
 ### Sous windows 
 
-Sous windows, vous pouvez télécharger l'installateur à cette adresse : 
+Sous windows, vous pouvez l'installer en suivant [les consignes à cette adresse](https://code.visualstudio.com/docs/setup/windows)
 
-https://code.visualstudio.com/sha/download?build=stable&os=win32-user
 
-Pour git, vous pouvez l'installer en téléchargeant et en ouvrant le fichier suivant : 
-https://github.com/git-for-windows/git/releases/latest
+Pour git, vous pouvez l'installer [en téléchargeant et en ouvrant le fichier suivant](https://github.com/git-for-windows/git/releases/download/v2.43.0.windows.1/Git-2.43.0-64-bit.exe)
 
 Lors de l'installation, vous pouvez laisser les options cochées par défaut. 
 
