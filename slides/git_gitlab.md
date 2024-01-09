@@ -189,7 +189,7 @@ $ git push
 Le cycle de tavail classique avec un dépôt git distant vide :
 
 ```shell
-$ git remote add git@gricad-gitlab.univ-grenoble-alpes.fr:git_cnrs/sandbox/votre_login.git
+$ git remote add origin git@gricad-gitlab.univ-grenoble-alpes.fr:git_cnrs/sandbox/votre_login.git
 $ git branch -u origin/main main
 $ git add, commit, status, diff, branch
 $ git pull
