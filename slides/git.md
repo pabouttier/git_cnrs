@@ -26,7 +26,7 @@ margin-left: 10%;
 <!-- _class: cool-list -->
 
 1. *Les gestionnaires de versions*
-2. *Les concepts et commandes de bases `git`*
+2. *Les concepts et commandes de base `git`*
 3. *Naviguer dans l'historique d'un projet*
 4. *Comprendre les branches*
 
@@ -36,7 +36,7 @@ margin-left: 10%;
 <!-- _class: cool-list -->
 
 1. ***Les gestionnaires de versions***
-2. *Les concepts et commandes de bases `git`*
+2. *Les concepts et commandes de base `git`*
 3. *Naviguer dans l'historique d'un projet*
 4. *Comprendre les branches*
 
@@ -71,7 +71,7 @@ Your closest collaborator is you six months ago, but you don’t reply to emails
   - Et d'atténuer drastiquement la peur de *détruire des trucs*
 
 ---
-# Les gestionnaires de versions de code (CVS en anglais)
+# Les gestionnaires de versions de code (VCS en anglais)
 
 Initialement prévus pour les **codes source logiciels**, leur versatilité actuelle en font des outils précieux pour gérer tous types de productions incluant du texte ayant vocation à évoluer dans le temps :
 
@@ -83,7 +83,7 @@ Initialement prévus pour les **codes source logiciels**, leur versatilité actu
 --- 
 # Pourquoi Git ?
 
-Il existe plusieurs CVS : cvs, subversion, mercurial, git, etc.
+Il existe plusieurs VCS : cvs, subversion, mercurial, git, etc.
 
 Les avantages de git :
 - Marche online et offline
@@ -101,12 +101,12 @@ Les avantages de git :
 <!-- _class: cool-list -->
 
 1. *Les gestionnaires de versions*
-2. ***Les concepts et commandes de bases `git`***
+2. ***Les concepts et commandes de base `git`***
 3. *Naviguer dans l'historique d'un projet*
 4. *Comprendre les branches*
 
 ---
-# Les concepts fondamentaux et commandes de bases
+# Les concepts fondamentaux et commandes de base
 
 <!-- <center> -->
 
@@ -151,7 +151,7 @@ Git va parfois nous inviter à saisir du texte, c'est là que la configuration d
 
 ```shell
 $ cd # on retourne dans notre /home
-$ mkdir new_project # On créée le dossier qui contiendra nos fichiers à suivre
+$ mkdir new_project # On crée le dossier qui contiendra nos fichiers à suivre
 $ cd new_project # On va dedans
 $ ls -a # On vérifie qu'il n'y a aucun fichier, même "caché"
 $ git init . # git init sans le '.' fait la même chose
@@ -172,7 +172,7 @@ $ cd ../example_project
 $ git init . 
 ```
 
-`git` reconnaît s'il est dans un dépôt si le dossier `.git` est présent dans le dossier où l'on se trouve ou **dans un dossier parent**
+`git` reconnaît s'il est dans un dépôt si le dossier `.git` est présent dans le dossier où l'on se trouve ou **dans un dossier parent**.
 
 `git` ne versionne que des fichiers. Un dossier vide ne sera pas considéré par `git`.
 
@@ -220,14 +220,14 @@ C'est tout.
 
 **Un commit indique l'état de l'ensemble des fichiers du dépôt à un instant donné (instantané ou snapshot).**
 
-**La zone d'index/staging** (entre deux commits, fichiers concernés part la commande `git add`) stocke **les informations (nouveau fichier, fichier supprimé, modifications apportés dans les fichiers déjà indexés) qui feront parties du prochain commit/instantané.** 
+**La zone d'index/staging** (entre deux commits, fichiers concernés part la commande `git add`) stocke **les informations (nouveau fichier, fichier supprimé, modifications apportées dans les fichiers déjà indexés) qui feront parties du prochain commit/instantané.** 
 
 ---
 # Remarque sur `git commit`
 
 La commande `git commit`, sans option, va ouvrir l'éditeur renseigné dans la variable d'environnement `EDITOR`. 
 
-Par convention, dans ce fichier texte, la première ligne est une description courte du `commit` (i.e. des modifications que vous voulez voir dans votre historique) suivie d'un retour à la ligne puis d'une description plus complète. 
+Par convention, dans ce fichier texte, la première ligne est une description courte du `commit` (i.e. des modifications que vous voulez voir dans votre historique) suivie d'une ligne vide puis d'une description plus complète. 
 
 ---
 # En avant
@@ -295,7 +295,7 @@ $ git add fichier_1.py fichier_2.py dossier/fichier3.py
 $ git commit -m "Ma première version"
 $ ... # On modifie des fichiers existants
 $ git commit -am "Ma deuxième version"
-$ touch new_file.txt # On créée un fichier
+$ touch new_file.txt # On crée un fichier
 $ git add new_file.txt
 $ git commit -m "Ma troisième version"
 ```
@@ -337,7 +337,7 @@ Les 30% restants sont un peu dans la suite et surtout dans la partie gitlab.
 <!-- _class: cool-list -->
 
 1. *Les gestionnaires de versions*
-2. *Les concepts et commandes de bases `git`*
+2. *Les concepts et commandes de base `git`*
 3. ***Naviguer dans l'historique d'un projet***
 4. *Comprendre les branches*
 
@@ -369,9 +369,9 @@ $ git checkout <hash de commit> # Remet tout le dépôt dans l'état où il éta
 ---
 # Retour vers le futur bis
 
-Une façon plus compacte de faire la même chose sur l'ensmeble du dépôt : `git revert`.
+Une façon plus compacte de faire la même chose sur l'ensemble du dépôt : `git revert`.
 ```shell
-$ git log # copié l'id du commit sur lequel pour vous voulez revenir)
+$ git log # copiez l'id du commit sur lequel pour vous voulez revenir
 $ git revert <id commit>
 ```
 **`git revert` va créer un nouveau commit qui remettra le dépôt dans l'état de l'ancien commit indiqué.** 
@@ -400,7 +400,7 @@ git commit --amend
 <!-- _class: cool-list -->
 
 1. *Les gestionnaires de versions*
-2. *Les concepts et commandes de bases `git`*
+2. *Les concepts et commandes de base `git`*
 3. *Naviguer dans l'historique d'un projet*
 4. ***Comprendre les branches***
 
@@ -457,7 +457,7 @@ $ git checkout newtest # ou git switch newtest
 
 </center>
 
-A partir de maintenant, tous les commits suivants s'empileront sur la branche `newtest` et non plus sur la branche `master`. Notez que `HEAD` pointe bien maintenant sur la branche `newtest`. 
+À partir de maintenant, tous les commits suivants s'empileront sur la branche `newtest` et non plus sur la branche `master`. Notez que `HEAD` pointe bien maintenant sur la branche `newtest`. 
 
 ---
 # Créer et utiliser une branche (3/4)
@@ -569,7 +569,7 @@ Un peu de pratique
 ---
 # À retenir - les branches
 
-- **Une branche est un pointeur/une étiquette vers un commit spécifique**, lui-même le résultat d'un empilement de commit (instantané de l'état des fichiers de votre dépôt)
+- **Une branche est un pointeur/une étiquette vers un commit spécifique**, lui-même le résultat d'un empilement de commits (instantanés de l'état des fichiers de votre dépôt)
 - On peut créer une nouvelle branche à l'aide de la commande `git branch <nombranche>` (ou `git switch -C`)
 - On liste les branches à l'aide de la commande `git branch`
 - On change de branche courante à l'aide de `git checkout <nombranche>`(ou `git switch`)

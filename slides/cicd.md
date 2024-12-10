@@ -28,7 +28,7 @@ margin-left: 10%;
 2. *Publier un site web avec GitLab*
    1. *Les générateurs de site statique*
    2. *GitLab Pages*
-   3. *Mise en oeuvre de la CI/CD*
+   3. *Mise en œuvre de la CI/CD*
 
 ---
 # TOC
@@ -39,7 +39,7 @@ margin-left: 10%;
 2. *Publier un site web avec GitLab*
    1. *Les générateurs de site statique*
    2. *GitLab Pages*
-   3. *Mise en oeuvre de la CI/CD*
+   3. *Mise en œuvre de la CI/CD*
 
 ---
 # Qu'est ce que c'est ?
@@ -92,25 +92,24 @@ Ici, il y a du **déploiement continu** aussi. Mais les mécanismes sont les mê
 --- 
 # Les exécuteurs (ou runners)
 
-Les exécuteurs sont des processus, qui tournent sur une machine (virtuelle ou non) indépendamment de GitLab, et ont pour mission : 
+Les exécuteurs sont des processus, qui tournent sur une machine (virtuelle ou non) indépendamment de GitLab et ont pour mission : 
 - **de surveiller (très) régulièrement** toute modification du dépôt de votre projet
 - **de lancer les tâches** que vous avez définies, sur la machine sur laquelle ils s'exécutent
-
 
 --- 
 # Les exécuteurs (ou runners)
  
 ### Les exécuteurs partagés
 
-- Installés et maintenus par les adminitsrateurs de la plateforme Gitlab
+- Installés et maintenus par les administrateurs de la plateforme Gitlab
 - **Disponibles pour tous les projets de la plateforme**
 - Comme partagés, ils peuvent parfois mettre du temps à détecter les modifications et lancer les tâches
 
 ### Les exécuteurs dédiés
 
-- [Installation sur une machine dédiée par vos soins](https://docs.gitlab.com/runner/install/)
-- Dédié à vos projets, donc **rapides et toujours disponibles**
-- Et peuvent gérer des tâches spécifiques (contrôle de l'environnement sur la machine sur laquelle ils sont installées)
+- [Installation sur une machine dédiée, par vos soins](https://docs.gitlab.com/runner/install/)
+- Dédiés à vos projets, donc **rapides et toujours disponibles**
+- Et peuvent gérer des tâches spécifiques (contrôle de l'environnement sur la machine sur laquelle ils sont installés)
 
 ---
 # Le fichier `.gitlab-ci.yml`
@@ -162,7 +161,7 @@ Nous utiliserons les runners partagés et je vous fournirai les fichiers `.gitla
 2. ***Publier un site web avec GitLab***
    1. ***Les générateurs de site statique***
    2. *GitLab Pages*
-   3. *Mise en oeuvre de la CI/CD*
+   3. *Mise en œuvre de la CI/CD*
 
 ---
 # Comment fait-on un site web ? 
@@ -187,7 +186,7 @@ Construire et publier un site web sur mesure est un métier (parfois, plusieurs)
 ---
 # SGC, SSG, kezako ?
 
-Il existe des systèmes (logiciels) qui permettent de **construire** des sites webs (=pages HTML) **simplement**
+Il existe des systèmes (logiciels) qui permettent de **construire** des sites web (=pages HTML) **simplement**
 
 - Les Systèmes de Gestion de Contenu (SGC ou CMS en anglais) : 
   - Ensemble d'outils pour créer et gérer des sites web complets et complexes
@@ -199,16 +198,16 @@ Il existe des systèmes (logiciels) qui permettent de **construire** des sites w
 # SGC, SSG, kezako ?
 
 Les Générateurs de sites statiques (SSG en anglais) : 
-- **Construit**, en quelques commandes/scripts, **un site web à partir de fichiers textes (contenu et templates/css) et medias**
+- **Construit**, en quelques commandes/scripts, **un site web à partir de fichiers textes (contenu et templates/css) et médias**
 - Le site construit est **statique** (pas d'interactions avec les visiteurs)
 - Les données d'entrée sont stockées dans un système de fichiers (pas de BDD)
-- Exemple : **hugo**, jekyll, pelican, gatsby, eleventy
+- Exemples : **hugo**, jekyll, pelican, gatsby, eleventy
 
 ---
 # Pourquoi nous intéressons-nous aux SSGs ? Pros
 
 Les avantages 
-- **Légéreté et rapidité** : Les pages HTML sont déjà écrites et stockées, il n'y a pas besoin de les construire à la volée
+- **Légèreté et rapidité** : Les pages HTML sont déjà écrites et stockées, il n'y a pas besoin de les construire à la volée
 - **Sécurité** : faible surface d'attaque
 - **Contrôle de version du contenu** : seuls des fichiers textes (et médias) sont nécessaires, donc on peut utiliser Git (et GitLab) pour gérer l'évolution du site. 
 - **Maintenance légère** : comparé à un CMS, la maintenance du SSG en lui-même est nulle. 
@@ -260,7 +259,7 @@ Nous allons voir comment installer et configurer un serveur web apache sur un se
 2. ***Publier un site web avec GitLab***
    1. *Les générateurs de site statique*
    2. ***GitLab Pages***
-   3. *Mise en oeuvre de la CI/CD*
+   3. *Mise en œuvre de la CI/CD*
 
 ---
 # GitLab Pages, notre sauveur
@@ -269,8 +268,8 @@ GitLab Pages:
 - Fonctionnalité disponible pour chaque projet GitLab
 - **Activable en activant la CI/CD sur votre projet**
 - Permet de (construire) et publier un site web (activation d'un serveur web)
-- Par défaut, utilise le dossier `/public`de votre projet et sert les pages web qu'il contient. 
-- Acccesible, sur la page de votre projet en cliquant sur ***Déploiements/Pages***
+- Par défaut, utilise le dossier `/public` de votre projet et sert les pages web qu'il contient. 
+- Acccessible, sur la page de votre projet en cliquant sur ***Déploiements/Pages***
 
 ---
 # TOC
@@ -281,7 +280,7 @@ GitLab Pages:
 2. ***Publier un site web avec GitLab***
    1. *Les générateurs de site statique*
    2. *GitLab Pages*
-   3. ***Mise en oeuvre de la CI/CD***
+   3. ***Mise en œuvre de la CI/CD***
 
 ---
 # Activation - Démo

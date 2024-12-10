@@ -16,7 +16,7 @@ Cette formation abordera les thèmes décrits ci-dessous. Les supports associés
 * Les branches avec Git
 
 ## [GitLab](../../git_cnrs/slides/gitlab.html)
-* Contexte des forges Logiciels
+* Contexte des forges logicielles
 * Les groupes et les projets GitLab
 * Tour d’horizon des fonctionnalités et des droits de groupe
 * Le premier projet : paramétrages, fonctionnalités, droits et groupes

@@ -40,18 +40,8 @@ margin-left: 10%;
 3. *Les groupes et projets*
 4. *Mise en pratique*
 
-
 ---
-# Quelques situations rencontrées
-
-<center>
-
-![h:500 center](fig/phd.png)
-
-</center>
-
----
-## Quelques situations rencontrées
+## Une situation classique
 
 <center>
 
@@ -64,6 +54,9 @@ margin-left: 10%;
 
 -  **Forge** : ensemble de logiciels, le plus souvent réunis sur un site web, dont le but est de faciliter la travail collaboratif et la gestion de projets de développement au sens large
 - Quelques exemples célèbre : gitlab, github, bitbucket, sourcesup, etc.
+- Dans le monde académique, des dizaines de forges 
+  - Par exemple, à l'institut Néel : https://cowork.neel.cnrs.fr/ (basée sur [Gitea](https://en.wikipedia.org/wiki/Gitea), accessible du réseau du polygone)
+  - Cf. [rapport MESR sur les forges logicielles](https://www.ouvrirlascience.fr/les-forges-logicielles-de-lesr/)
 - Aujourd'hui, nous utiliserons https://gricad-gitlab.univ-grenoble-alpes.fr
 
 ---

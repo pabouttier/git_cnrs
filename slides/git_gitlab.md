@@ -15,6 +15,7 @@ margin-left: 10%;
 
 ![bg left:33% fit](fig/logo-git.png)
 ![bg left:33% fit](fig/logo-gitlab.png)
+
 # Git & GitLab
 ## Travailler avec les dépôts distants
 
@@ -42,11 +43,11 @@ margin-left: 10%;
 ---
 # Travailler avec les dépôts distants
 
-Jusqu’à présent nous avons utilisé git sur un **seul dépôt**, localement. Nous sommes en mesure de gérer plusieurs lignes de développement (branches), de suivre l’évolution des fichiers, de revenir en arrière etc.
+Jusqu’à présent, nous avons utilisé `git` sur un **seul dépôt**, localement. Nous sommes en mesure de gérer plusieurs lignes de développement (branches), de suivre l’évolution des fichiers, de revenir en arrière, etc.
 
 Mais il manque un point essentiel, **la possibilité de collaborer** avec d’autres utilisateurs sur le même projet, éventuellement via le réseau.
 
-Pour cela nous allons **utiliser des dépots distants/remote** : un (ou plusieurs) dépôt/repository, en général hébergé sur un serveur distant mais pas nécessairement, avec lequel vous allez pouvoir échanger des données.
+Pour cela, nous allons **utiliser des dépots distants/remote** : un (ou plusieurs) dépôt/repository, en général hébergé sur un serveur distant mais pas nécessairement, avec lequel vous allez pouvoir échanger des données.
 
 ---
 # Dépôts distants, principe
@@ -92,7 +93,7 @@ On peut supprimer la connexion à un dépôt distant :
 
 Dès qu’un dépôt est référencé comme **remote**, vous pouvez synchroniser votre dépôt avec celui-ci. 
 
-La première étape consiste à collecter toutes les infos (données, branches ...) du dépôt distant via la commande `git fetch <nom du dépôt>`:
+La première étape consiste à collecter toutes les infos/métadonnées (données, branches ...) du dépôt distant via la commande `git fetch <nom du dépôt>`:
 
 ```shell
 $ git fetch origin
@@ -102,7 +103,7 @@ $ git fetch origin
 ---
 # Communiquer entre dépôt - git merge (again)
 
-Ensuite, vous pourrez fusionner une branche distante et une branche locale, avec la commande `git merge NomDépot/NomBranche` comme vu précédemment : 
+Ensuite, vous pourrez fusionner une branche distante et une branche locale (sur laquelle vous êtes positionnés), avec la commande `git merge NomDépot/NomBranche` comme vu précédemment : 
 
 ```shell
 $ git merge origin/master
@@ -119,7 +120,7 @@ $ git pull <nom du dépôt> <nom de la branche>
 $ git pull origin master # Par exemple
 ```
 
-Dans tous les cas, pour un fonctionnement acceptable, il faut un **ancêtre** commun (*i.e.* **commit**) aux différentes branches. 
+Dans tous les cas, pour un fonctionnement acceptable, il faut un **ancêtre** commun (i.e. **commit**) aux différentes branches. 
 
 ---
 # Connecter branches locales et branches distantes (1/2)
@@ -132,7 +133,8 @@ $ git branch --set-upstream-to=origin/newtest newtest
 $ git branch -u origin/master master
 ```
 
-`--set-upstream`et `-u` désigne la même option. 
+`--set-upstream`et `-u` désigne la **même option**. 
+
 Ici, `origin/newtest`est la branche upstream de la branche locale `newtest`. Idem pour `master`. 
 
 ---
@@ -494,7 +496,7 @@ Maintenant, vous devez pouvoir :
 # Ce que nous n'avons pas (encore ?) vu 
 
 - Le wiki
-- Les commandes complexes de Git pour retravailler l'historique (`git rebase`, `git cherry-picking`)
+- Les commandes complexes de Git pour retravailler l'historique (`git rebase`, `git cherry-pick`)
 - L'intégration continue et le déploiement continu
 - ...
 
@@ -502,6 +504,6 @@ Maintenant, vous devez pouvoir :
 # Ce que nous n'avons pas (encore ?) vu 
 
 - Le wiki
-- Les commandes complexes de Git pour retravailler l'historique (`git rebase`, `git cherry-picking`)
+- Les commandes complexes de Git pour retravailler l'historique (`git rebase`, `git cherry-pick`)
 - ***L'intégration continue et le déploiement continu***
 - ...
