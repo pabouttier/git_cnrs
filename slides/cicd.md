@@ -234,7 +234,7 @@ Création du site
 # En pratique
 
 - Si possible, [installez hugo sur votre machine](https://gohugo.io/installation/)
-- [Clonez ce dépôt Git](https://gricad-gitlab.univ-grenoble-alpes.fr/git_cnrs/awesome-website)
+- [Clonez ce dépôt](https://gricad-gitlab.univ-grenoble-alpes.fr/git_cnrs/formation-2024/awesome-website)
 - Dans un terminal, placez-vous dans le dossier du dépôt et lancez `hugo serve`
 - Explorons ensemble le contenu du dépôt
 
@@ -242,13 +242,13 @@ Création du site
 # Mais où sont nos pages web ? 
 
 Jusqu'à maintenant, nous avons visualisé le site web généré par Hugo. Mais où est-il, en terme de fichiers ?
-- Nulle part :) Pour générer les fichiers qui seront publiés par un serveur web, il faut lancer la commande `hugo -D`. 
+- Nulle part :) Pour générer les fichiers qui seront publiés par un serveur web, il faut lancer la commande `hugo -D`
 - Un nouveau dossier, dans votre projet, a été créé : `public/`. Allons y faire un tour. 
 
 ---
 <!-- _class: transition -->
 
-Nous allons voir comment installer et configurer un serveur web apache sur un serveur dédié.
+Nous allons voir comment installer et configurer un serveur web apache sur un serveur dédié :)
 
 ---
 # TOC
