@@ -354,30 +354,28 @@ Plusieurs remarques :
 - Nous voyons l'importance ici des messages de commits : **ils mettent du sens dans l'historique**
 
 ---
-# Retour vers le futur
+# Un (premier) petit mot sur le `HEAD`
 
-Git permet non seulement de construire un historique mais également de voyager dedans.
-Nous pouvons retrouver n'importe quel état de tout ou partie du dépôt : 
-```shell
-$ git checkout <hash de commit> -- <nomfichier> # Va remettre le fichier dans l'état où il était au commit indiqué
-$ git checkout <hash de commit> # Remet tout le dépôt dans l'état où il était au commit indiqué
-```
-**Attention** : on ne *revient* pas au commit indiqué ! On remet les fichiers dans l'état où ils étaient auparavant. Si l'on veut continuer avec cet instantané : `git add ...`et `git commit -m ...`.
-
-**Dans la plupart des cas, c'est la bonne façon d'annuler des modifications précédentes**, on ne touche pas à l'historique (on l'enrichit), on ne détruit rien du travail accompli. 
+Le mot-clé `HEAD` est un pointeur de `git` vers le commit actuellement utilisé et son historique lié (=branche). En général, c'est le dernier commit en date.
 
 ---
-# Retour vers le futur bis
+# Comment "revenir" en arrière ? - `git revert`
 
-Une façon plus compacte de faire la même chose sur l'ensemble du dépôt : `git revert`.
-```shell
-$ git log # copiez l'id du commit sur lequel pour vous voulez revenir
-$ git revert <id commit>
-```
-**`git revert` va créer un nouveau commit qui remettra le dépôt dans l'état de l'ancien commit indiqué.** 
+Vous souhaitez, pour diverses raisons, revenir à un état antérieur de votre historique : `git revert commit0..commitN` !
+
+Cette commande va **inverser** les changements opérés entre le `commit0` et le `commitN`, puis **créer un nouveau commit** qui va remettre les fichiers dans l'état où ils étaient au `commit0`.
+
+À tester : 
+- `git revert HEAD^3..HEAD`
+- `git revert n°commit..HEAD`
 
 ---
-# Les autres manières de revenir en arrière
+# Remarque sur `git revert`
+
+**Dans la plupart des cas, c'est la bonne façon d'annuler des modifications précédentes**, on ne touche pas à l'historique (on l'enrichit), on ne détruit rien du travail accompli.
+
+---
+# Comment "revenir" en arrière ? - les autres cas
 
 Annulation des modifications sur un fichier (retour au dernier commit)
 ```shell
@@ -441,14 +439,25 @@ Nous avons créé un nouveau pointeur sur le dernier commit.
 
 </center>
 
-Le pointeur `HEAD` indique sur quelle branche nous nous trouvons (ici, toujours `master`)
+---
+# Un (deuxième) petit sur `HEAD`
+
+<center>
+
+![h:250 center](fig/branch1.png)
+
+</center>
+
+Par défaut, `HEAD` est **attaché**, c'est à dire que c'est un commit qui se trouve dans une branche.
+
+Parfois, il peut se trouver dans un état **détaché**, i.e. un commit "flottant", hors de tout historique (branches). Nous verrons plus tard comment gérer ce cas de figure.
 
 ---
 # Créer et utiliser une branche (2/4)
 
 Pour changer de branche : 
 ```shell
-$ git checkout newtest # ou git switch newtest
+$ git switch newtest # ou git checkout newtest
 ``` 
 
 <center>
@@ -464,7 +473,7 @@ $ git checkout newtest # ou git switch newtest
 
 Création et changement de branche en une seule opération :
 ```shell
-$ git checkout -b newtest # ou git switch -C newtest
+$ git switch -C newtest # ou git checkout -b newtest
 ```
 Pour avoir la liste des branches et savoir sur laquelle nous sommes positionnés : 
 ```shell
@@ -496,7 +505,7 @@ Dans notre cas, nous voulons intégrer les développements de la source `newtest
 
 **On se positionne d'abord sur la branche cible** `master` : 
 ```shell
-$ git checkout main # ou git switch main
+$ git switch main # ou git checkout main
 ```
 Puis on fusionne :
 ```shell
@@ -555,6 +564,21 @@ Une fois fait, il faut indexer notre modification du fichier (`git add ...`) et 
 <!-- _class: transition -->
 
 Un peu de pratique
+
+---
+# Retour vers le futur
+
+Git permet non seulement de construire un historique mais également de voyager dedans.
+Nous pouvons retrouver n'importe quel état de tout ou partie du dépôt : 
+```shell
+$ git checkout <hash de commit> 
+```
+**Attention** : on ne *revient* pas, sur la branche, au commit indiqué ! On se place dans un commit flottant où les fichiers sont dans l'état où ils étaient au commit indiqué. Si l'on veut continuer avec cet instantané : `git add ...`et `git commit -m ...`.
+
+Pour repartir de ce comit, il faut créer alors une nouvelle branche : 
+```bash
+$ git switch -C new_beginning
+```
 
 --- 
 # À retenir - les commandes essentielles
