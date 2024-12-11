@@ -135,7 +135,7 @@ GitHub, GitLab.com, Bitbucket, etc. :
 ---
 # Accès à une forge
 
-Pour l’enseignement et la recherche, la tendance est aujourd’hui à la mise en place de plateformes mutualisées dans les organismes de recherche et/ou les communautés. On note également une évolution des outils (passage des forges “à l’ancienne” vers des forges basées sur les logiciels github/gitlab).
+Pour l’enseignement et la recherche, la tendance est aujourd’hui à la mise en place de plateformes mutualisées dans les organismes de recherche et/ou les communautés. On note également une évolution des outils (passage des forges “à l’ancienne” vers des forges basées sur git : e.g. github/gitlab).
 
 Quelques exemples :
 - https://sourcesup.renater.fr/ : destinée aux établissements d’enseignement supérieur et aux organismes de recherche français. Basée sur le logiciel fusionforge.
@@ -165,7 +165,7 @@ Quelques exemples :
 https://gricad-gitlab.univ-grenoble-alpes.fr
 
 - Communauté ESR Grenoble (Onglet **LDAP UGA**): accès complet à tous les outils
-- Comptes externes(Onglet **Standard**) : **création de groupes et projets non-autorisés**
+- Comptes externes (Onglet **Standard**) : **création de groupes et projets non-autorisés**
 
 ---
 # Le menu *Settings*
@@ -236,8 +236,8 @@ https://gricad-gitlab.univ-grenoble-alpes.fr/help
 ---
 # Mise en situation
 
-- Une fois connectés à gricad-gitlab, demandez à rejoindre le groupe `git_cnrs`
-- Créez un projet `sandbox/votre_login` dans ce groupe et sous-groupe
+- Une fois connectés à gricad-gitlab, demandez à rejoindre le groupe `git_cnrs/Formation CNRS 2024`
+- Créez un projet `sandbox_votre_login` dans ce groupe et sous-groupe
 - Nous regarderons les permissions de chaque membre du projet en détail 
 
 ---

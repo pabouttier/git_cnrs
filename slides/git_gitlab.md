@@ -106,7 +106,7 @@ $ git fetch origin
 Ensuite, vous pourrez fusionner une branche distante et une branche locale (sur laquelle vous êtes positionnés), avec la commande `git merge NomDépot/NomBranche` comme vu précédemment : 
 
 ```shell
-$ git merge origin/master
+$ git merge origin/main
 ```
 
 Vous avez importé dans votre branche courante (celle depuis laquelle vous avez fait le `git merge`) les modifications de la branche spécifiée du dépôt distant (ici `master`) . 
@@ -117,7 +117,7 @@ Vous avez importé dans votre branche courante (celle depuis laquelle vous avez 
 `git fetch` et `git merge` peuvent être combinés en une seule opération :
 ```shell
 $ git pull <nom du dépôt> <nom de la branche>
-$ git pull origin master # Par exemple
+$ git pull origin main # Par exemple
 ```
 
 Dans tous les cas, pour un fonctionnement acceptable, il faut un **ancêtre** commun (i.e. **commit**) aux différentes branches. 
@@ -130,12 +130,12 @@ Il est possible (et recommandé !) d’associer/connecter (**tracking**) une br
 Cette dernière sera dénommée branche “upstream” de la branche locale. Par exemple :
 ```shell
 $ git branch --set-upstream-to=origin/newtest newtest
-$ git branch -u origin/master master
+$ git branch -u origin/main main
 ```
 
 `--set-upstream`et `-u` désigne la **même option**. 
 
-Ici, `origin/newtest`est la branche upstream de la branche locale `newtest`. Idem pour `master`. 
+Ici, `origin/newtest`est la branche upstream de la branche locale `newtest`. Idem pour `main`. 
 
 ---
 # Connecter branches locales et branches distantes (2/2)
@@ -157,8 +157,8 @@ $ git push NomDepotRemote branche_locale:branche_distante
 
 Ou plus simplement, après avoir connecté vos branches avec des branches upstream :
 ```shell
-$ git switch master
-$ git push # push de master vers origin/master 
+$ git switch main
+$ git push # push de master vers origin/main
 ```
 
 ---
@@ -169,8 +169,9 @@ Nous pouvons indiqué une branche upstream au premier push :
 $ git switch -C newbranch # on crée et on se positionne sur la branche locale newbranch
 $ git push 
 fatal: The current branch newbranch has no upstream branch.
-$ git push -u origin newbranch 
+$ git push -u origin newbranch
 ```
+**Remarque** : marche même si `newbranch` n'existe pas dans le dépôt d'origine. 
 
 ---
 # En résumé (1/2)
@@ -212,7 +213,7 @@ Pour se mettre sur un branche qui "vient" du dépôt distant (i.e. que vous n'av
 ```
 git switch nom_branche_distante
 ```
-Cela va créer la branche locale directement rattaché à la branche distante. 
+Cela va créer la branche locale directement rattaché à la branche distante (il faut que vous ayez fait un `pull` ou `fetch` depuis sa création sur le dépôt distant).
 
 ---
 # Pousser une branche locale sur un dépôt distant
@@ -243,7 +244,7 @@ Nous pouvons gérer entièrement notre dépôt git via l'interface web. La plupa
 ---
 # Mise en situation
 
-Une fois votre projet `sandbox/votre_login` créé, créez via l'interface web : 
+Une fois votre projet `sandbox_votre_login` créé, créez via l'interface web : 
 - une branche
 - dans cette branche, un fichier nommé `votrelogin.md`
 - Insérez ce que vous voulez dedans et faites un commit
@@ -263,10 +264,9 @@ Deux protocoles sont disponibles pour répondre à ce besoin :
 ---
 # Mise en situation
 
-- Récupérez (clonez) le dépôt distant `sandbox/votre_login` sur votre machine
+- Récupérez (clonez) le dépôt distant `sandbox_votre_login` sur votre machine
 - Travaillez comme vous le souhaitez, que ce soit en local ou sur GitLab
-- **Connectez la branche `main` ET la branche que vous avez créée** sur GitLab dans votre dépôt local
-- Explorez ! 
+- **Explorez !** 
   - Faites des commits, des branches, des merge, etc.
 - Synchroniser vos modifications. 
 
@@ -351,7 +351,7 @@ Jusqu'à maintenant, chacun a travaillé dans son propre projet GitLab/dépôt G
 ---
 # En pratique
 
-- Clonez tous le projet https://gricad-gitlab.univ-grenoble-alpes.fr/git_cnrs/common
+- Clonez tous le projet https://gricad-gitlab.univ-grenoble-alpes.fr/git_cnrs/formation-2024/sandbox
 - Travaillez tous localement dans ce projet (commits, branches, etc)
 - Essayez tous d'éditer le README dans la branche `main`
 - Synchroniser vos modificatiosn avec le dépôt distant
