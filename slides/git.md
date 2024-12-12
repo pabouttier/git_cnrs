@@ -366,7 +366,7 @@ Vous souhaitez, pour diverses raisons, revenir à un état antérieur de votre h
 Cette commande va **inverser** les changements opérés entre le `commit0` et le `commitN`, puis **créer un nouveau commit** qui va remettre les fichiers dans l'état où ils étaient au `commit0`.
 
 À tester : 
-- `git revert HEAD^3..HEAD`
+- `git revert HEAD~3..HEAD`
 - `git revert n°commit..HEAD`
 
 ---
