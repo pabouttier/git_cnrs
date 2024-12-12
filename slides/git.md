@@ -573,9 +573,9 @@ Nous pouvons retrouver n'importe quel état de tout ou partie du dépôt :
 ```shell
 $ git checkout <hash de commit> 
 ```
-**Attention** : on ne *revient* pas, sur la branche, au commit indiqué ! On se place dans un commit flottant où les fichiers sont dans l'état où ils étaient au commit indiqué. Si l'on veut continuer avec cet instantané : `git add ...`et `git commit -m ...`.
+**Attention** : on ne *revient* pas, sur la branche, au commit indiqué ! On se place dans un commit flottant (`HEAD` détaché) où les fichiers du dépôt sont dans l'état où ils étaient au commit indiqué.
 
-Pour repartir de ce comit, il faut créer alors une nouvelle branche : 
+Pour repartir de ce commit "proprement", il faut créer alors une nouvelle branche, e.g. : 
 ```bash
 $ git switch -C new_beginning
 ```
