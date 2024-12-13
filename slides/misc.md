@@ -17,6 +17,13 @@ footer: Git(Lab)@CNRS - pierre-antoine.bouttier@univ-grenoble-alpes.fr
 
 
 ---
+# `git log`, maoins austère
+
+```
+$ git log --graph --oneline --branches --decorate
+```
+
+---
 
 # Le fichier `.gitignore`
 
