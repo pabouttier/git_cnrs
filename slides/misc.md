@@ -98,57 +98,6 @@ git diff d18e05e80fe11c6206e2cb5a0624b477a6c31226 monFichier
 
 ---
 
-# Le langage markdown
-
-Le Markdown est un langage très simple à apprendre, à lire et à écrire qui permet de formater du texte pour une page web. Sur Gitlab vous pouvez utiliser une version étendue du Markdown (gitlab flavored markdown) pour rédiger vos commentaires, issues, fichier d’aide etc.
-
-Documentation
-- https://docs.gitlab.com/ee/user/markdown.html
-- https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet
-
----
-## Le langage Markdown
-
-**L'apprentissage de l'écriture en markdown** est très rapide. Prenez ce temps, vous verrez que c'est à la fois très pratique et très utilisé. 
-
-Les avantages du markdown :
-- Basé sur des fichiers textes bruts, donc très interopérables (contrairement aux .doc, .docx, par exemple), et facile à mettre dans un dépôt git/gitlab.
-- Des règles très simples
-- Facile à convertir : html, pdf, jpg, png, etc...
-
----
-## Le langage markdown
-
-- Au cours de la formation, vous avez pu voir des fichiers dont le nom se finissait par `.md` : c'est l'extension par défaut pour le markdown. 
-- Un fichier markdown est un fichier texte brut avec quelques règles syntaxiques.
-- Si vous écrivant un document markdown dans votre dépôt gitlab, Gitlab l'affichera formatté. 
-- Il est très conseillé, pour chaque projet git/gitlab, d'écrire un fichier README.md qui décrira le projet et ce qu'il y a savoir à son propos.
-
----
-## Le langage markdown
-
-```markdown
-# Titre de niveau 1
-
-*Pour écrire en italique*, **pour écrire en gras**, ~~du texte barré~~.
-
-## titre de niveau 2
-
-voici une liste : 
-- Élément 2
-- Élément 1
-
-### Titre de niveau 3
-
-Une liste ordonnée : 
-1. Élément 1
-2. Élément 2
-```
-
-Les supports de ce stage sont intégralement écrits en markdown. 
-
----
-
 # Les licences (logicielles)
 
 ---
@@ -234,41 +183,130 @@ Le fork est **une copie d'un projet gitlab** dans un espace de noms où vous ave
 
 
 ---
-# L'intégration continue
+# `git stash`, pour mettre de côté des changements non-validés
+
+Parfois, pour des opérations de merge, par exemple, il faut une copie de travail sans modifications. 
+
+Si jamais ce n'est pas le cas, `git stash` vous aide. Il peut mettre de côté les modifications en cours dans l'espace de travail. 
 
 ---
-## Qu'est ce que c'est ?
 
-**Concept** : l’intégration continue (CI) est une pratique consistant à vérifier systématiquement l’impact de toute modification du code source sur le fonctionnement, les performances, etc. par la mise en place d’une chaine d’exécution automatique contenant par exemple des ”tests”.
+# `git stash`
 
-- Permet de produire un code stable, robuste et portable. 
-- Permet de s’assurer que le résultat de nouvelles modifications n’introduit pas de régression du code
-- Permet d’anticiper différents types d’utilisation du code.
-- Permet de faciliter les développements au quotidien.
+```
+$ git status
+On branch development
+Your branch is up to date with 'origin/development'.
 
-**Comment** : Des outils tels que github ou gitlab proposent un outil d’intégration continue simple à utiliser et très fonctionnel.
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   README.md
 
----
-## Par quelle magie ?
+no changes added to commit (use "git add" and/or "git commit -a")
+$ git stash
+$ git status
+On branch development
+Your branch is up to date with 'origin/development'.
 
-À chaque push vers le serveur, des tâches pré-définies par les développeurs sont exécutées.
-
-![w:900 center](fig/ci1.png)
-
----
-## Quelques exemples
-
-![w:900 center](fig/ci2.png)
-
-Ici, il y a du **déploiement continu** aussi. Mais les mécanismes sont les mêmes que pour la CI. Seule la finalité change.
+nothing to commit, working tree clean
+```
 
 ---
-## Comment mettre la CI/CD en place ? 
+# `git stash`
 
-- Il suffit de créer un fichier nommé `.gitlab-ci.yml`à la racine du dépôt du projet
-- Dès que ce fichier est présent, l’intégration continue est activée. Ce fichier contient la liste des tâches à effectuer : quelles actions, sur quelles machines etc.
-- Définir des ***runners*** : une ou plusieurs machines (éventuellement virtuelles) sur lesquelles seront exécutés les jobs d’intégration continue.
+- `git stash` sauvegarde vos modifications actuelles de votre copie de travail et les met de côté
+- `git stash list` : liste l'ensemble de vos jeux de modif.
+- `git stash pop` les réapplique à votre copie de travail et supprime ce jeu de modif. dans l'espace de stash
+- `git stash apply` fait la même chose mais les garde dans l'espace de stash
+- `git stash save "message"` permet d'ajouter un message à ce jeu de modification
+- `git stash pop stash@{2}` : applique un jeu de modif précis
 
-https://docs.gitlab.com/ee/ci/quick_start/
+---
+# `git rebase`, pour linéariser l'historique
 
-**Voir démo**
+[Thanks to minimum.fr](https://www.miximum.fr/blog/git-rebase/)
+
+Une situation classique : 
+```
+A---B---C---D ← main
+     \
+      E---F---G ← discussion
+```
+
+Après un `git merge` :
+```
+$ git switch main
+$ git merge discussion
+
+A---B---C---D---H ← main
+     \         /
+      E---F---G ← discussion
+```
+
+---
+# `git rebase`, pour linéariser l'historique
+
+`git rebase` va transplanter la branche discussion sur la branche `main` (à partir du commit D) : 
+```
+$ git rebase main discussion
+A---B---C---D ← main
+             \
+              E---F---G ← discussion
+```
+
+La fusion dans `main` est maintenant triviale : 
+```
+$ git switch main
+$ git merge discussion
+
+A---B---C---D---E---F---G ← master
+                         \
+                          discussion
+```
+
+---
+# À quoi sert `git rebase` ? 
+
+ - conserver un historique propre ;
+- corriger des erreurs de fusion ;
+- faciliter le travail collaboratif ;
+- faciliter les fusions sur les branches qui nécessitent un très long développement.
+
+---
+# Cas pratique 
+
+```
+          F---G ← bug2
+         /
+A---B---E---H---I ← main
+     \
+      C---D ← bug1
+```
+
+Avec un `rebase` avant chaque fusion, on obtient : 
+
+```
+A---B---E---H---I---C---D---F---G ← main
+```
+
+---
+# Détails des commandes 
+
+```
+$ git rebase main bug1
+$ git switch master
+$ git merge bug1
+$ git branch -d bug1
+$ git rebase main bug2
+$ git switch main
+$ git merge bug2
+$ git branch -d bug2
+```
+
+---
+# Remarque
+
+**Ne rebasez jamais des commits qui ont déjà été poussés sur un dépôt public.**
+
+Quand vous rebasez des données, vous abandonnez les commits existants et vous en créez de nouveaux qui sont similaires mais différents (e.g. hash différents).
