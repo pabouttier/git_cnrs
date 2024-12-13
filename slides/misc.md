@@ -307,6 +307,6 @@ $ git branch -d bug2
 ---
 # Remarque
 
-**Ne rebasez jamais des commits qui ont déjà été poussés sur un dépôt public.**
+**Soyez très vigilants en rebasant des commits qui ont déjà été poussés sur un dépôt public.**
 
 Quand vous rebasez des données, vous abandonnez les commits existants et vous en créez de nouveaux qui sont similaires mais différents (e.g. hash différents).
