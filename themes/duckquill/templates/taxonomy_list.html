@@ -1,0 +1,19 @@
+{% extends "base.html" %}
+
+{% block content %}
+<h1>Tags</h1>
+<small> {{ terms | length }} tags in total </small>
+<article>
+  <br />
+  <br />
+  {% for tag in terms %}
+  <small>
+    <a class="pill" href="{{ get_taxonomy_url(kind='tags', name=tag.name) }}">
+      <i class="bi bi-tag-fill"></i>
+      {{ tag.name }}
+    </a>
+    <br />
+  </small>
+  {% endfor %}
+</article>
+{% endblock content %}

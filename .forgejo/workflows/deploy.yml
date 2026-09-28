@@ -1,0 +1,47 @@
+name: Build and deploy Codeberg Pages
+
+on:
+  push:
+    branches:
+      - main
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Build Zola site
+        run: |
+          curl -sL -o /tmp/zola.tar.gz https://github.com/getzola/zola/releases/download/v0.23.4/zola-v0.23.4-x86_64-unknown-linux-gnu.tar.gz
+          tar -xzf /tmp/zola.tar.gz -C /tmp
+          /tmp/zola build
+
+      - name: Ensure slides dir exists
+        run: "mkdir -p public/slides"
+
+      - name: Copy slides assets (fig / styles)
+        run: "cp -r slides/fig slides/styles public/slides/"
+
+      - name: Marp Build (*.html)
+        uses: docker://marpteam/marp-cli:v3.4.0
+        with:
+          args: --allow-local-files -I ./slides/ -o ./public/slides --html
+        env:
+          MARP_USER: root:root
+
+      - name: Marp Build (*.pdf)
+        uses: docker://marpteam/marp-cli:v3.4.0
+        with:
+          args: --allow-local-files -I ./slides/ -o ./public/slides --pdf
+        env:
+          MARP_USER: root:root
+
+      - name: Deploy to Codeberg Pages
+        uses: https://codeberg.org/git-pages/action@v2
+        with:
+          site: https://${{ forge.repository_owner }}.codeberg.page/git_cnrs/
+          token: ${{ forge.token }}
+          source: public/

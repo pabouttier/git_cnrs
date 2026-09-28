@@ -1,0 +1,51 @@
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="{{ config.extra.primary_color }}" />
+  <link rel="canonical" href="{{ current_url | default(value='/') }}" />
+
+  <title>
+    {%- if page is defined and page.title -%}
+      {{ page.title }} - {{ config.title }}
+    {%- elif section is defined and section.title -%}
+      {{ section.title }} - {{ config.title }}
+    {%- else -%}
+      {{ config.title }}
+    {%- endif -%}
+  </title>
+
+  <link rel="stylesheet" href="{{ get_url(path='style.css') }}" />
+  {% if config.extra.stylesheets %}
+    {% for stylesheet in config.extra.stylesheets %}
+      <link rel="stylesheet" href="{{ get_url(path=stylesheet) }}" />
+    {% endfor %}
+  {% endif %}
+
+  {% if config.extra.animated_favicon %}
+    <link rel="icon" type="image/gif" href="{{ get_url(path='favicon.gif') }}" />
+  {% else %}
+    <link rel="icon" type="image/png" href="{{ get_url(path='favicon.png') }}" />
+  {% endif %}
+  <link rel="apple-touch-icon" sizes="180x180" href="{{ get_url(path='apple-touch-icon.png') }}" />
+  <link rel="me" href="https://{{ config.extra.comments.host }}/@{{ config.extra.comments.user }}" />
+
+  <!-- Open Graph -->
+  <meta property="og:site_name" content="{{ config.title }}" />
+  {%- set og_title = config.title -%}
+  {%- if page is defined and page.title -%}
+    {%- set og_title = page.title ~ " - " ~ config.title -%}
+  {%- elif section is defined and section.title -%}
+    {%- set og_title = section.title ~ " - " ~ config.title -%}
+  {%- endif -%}
+  <meta property="og:title" content="{{ og_title }}" />
+  <meta property="og:url" content="{{ current_url | default(value='/') }}" />
+  {%- set og_description = config.description -%}
+  {%- if page is defined and page.description -%}
+    {%- set og_description = page.description -%}
+  {%- elif section is defined and section.description -%}
+    {%- set og_description = section.description -%}
+  {%- endif -%}
+  <meta property="og:description" content="{{ og_description }}" />
+  <meta property="og:image" content="{{ get_url(path='card.png') }}" />
+</head>
