@@ -145,8 +145,9 @@ section code:not(pre code) {
 }
 
 section pre {
+  font-size: 0.72em;
   line-height: 1.4;
-  padding: 1rem;
+  padding: 0.6rem 1rem;
   border-radius: 12px;
   box-shadow: var(--shadow);
   background-color: #fdf6e3;
