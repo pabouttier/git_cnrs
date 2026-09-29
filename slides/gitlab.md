@@ -1,6 +1,6 @@
 ---
 marp: true
-theme: socrates
+theme: git_cnrs
 author: Pierre-Antoine Bouttier
 paginate: true
 footer: Git(Lab)@CNRS - pierre-antoine.bouttier@univ-grenoble-alpes.fr

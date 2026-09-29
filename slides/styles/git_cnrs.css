@@ -1,0 +1,320 @@
+/* @theme git_cnrs */
+
+/*
+  Thème Marp "git_cnrs" — identique aux couleurs du site Zola (thème duckquill,
+  surchargé par sass/custom.scss) :
+    - accent primaire rouge      #f71c1c
+    - fond (mode clair)          #ffffff
+    - fond (mode sombre)         #5a5a5a
+    - code (mode clair)          fond #fdf6e3, texte #657b83  (solarized-light)
+    - code (mode sombre)         fond #073642, texte #93a1a1
+    - polices Inter (texte) et Source Code Pro (code)
+
+  Trait distinctif du site : titre h1 terminé par un point rouge.
+*/
+
+@import "default";
+@import "structure";
+
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;600;900&family=Source+Code+Pro:wght@400;600;900&display=swap");
+
+:root {
+  font-family: "Inter", "Noto Sans", sans-serif;
+  font-weight: 400;
+
+  /* palette du site */
+  --primary-color: #f71c1c;
+  --bg-color: #ffffff;
+  --fg-color: rgba(0, 0, 0, 0.8);
+  --fg05: rgba(0, 0, 0, 0.05);
+  --fg09: rgba(0, 0, 0, 0.09);
+  --fg50: rgba(0, 0, 0, 0.5);
+  --red-fg: #f71c1c;
+  --shadow: 0 2px 10px 2px rgba(0, 0, 0, 0.08);
+
+  /* correspondances variables de "structure" */
+  --background-color: #ffffff;
+  --h1-color: rgba(0, 0, 0, 0.85);
+  --border-color: #f71c1c;
+  --bold-color: rgba(0, 0, 0, 0.75);
+  --italic-color: rgba(0, 0, 0, 0.85);
+  --italic-background-color: rgba(247, 28, 28, 0.12);
+  --list-item-color: rgba(0, 0, 0, 0.75);
+  --after-color: #f71c1c;
+  --table-header-color: #444444;
+  --main-color: #f71c1c;
+  --darker-color: #444444;
+  --lighter-color: #f71c1c;
+  --extra-back-color: rgba(0, 0, 0, 0.18);
+  --letter-spacing: 0px;
+  --cool-list-color: #f71c1c;
+
+  /* classes structure */
+  --transitionpage-color: #f71c1c;
+  --strong-color: #f71c1c;
+
+  /* taille des champs du titlepage */
+  --title-size: 150%;
+  --subtitle-size: 110%;
+  --author-size: 105%;
+  --date-size: 105%;
+  --institute-size: 90%;
+  --title-font-weight: 900;
+  --subtitle-font-weight: 600;
+  --title-color: rgba(0, 0, 0, 0.85);
+  --subtitle-color: rgba(0, 0, 0, 0.5);
+  --titlepage-color: rgba(0, 0, 0, 0.55);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg-color: #5a5a5a;
+    --fg-color: #ffffff;
+    --fg05: rgba(255, 255, 255, 0.06);
+    --fg09: rgba(255, 255, 255, 0.09);
+    --fg50: rgba(255, 255, 255, 0.5);
+    --red-fg: #f59;
+    --red-fg: #ff5959;
+
+    --background-color: #5a5a5a;
+    --h1-color: #ffffff;
+    --bold-color: rgba(255, 255, 255, 0.9);
+    --italic-color: #ffffff;
+    --italic-background-color: rgba(255, 89, 89, 0.2);
+    --list-item-color: rgba(255, 255, 255, 0.85);
+    --extra-back-color: rgba(255, 255, 255, 0.18);
+
+    --title-color: #ffffff;
+    --subtitle-color: rgba(255, 255, 255, 0.6);
+    --titlepage-color: rgba(255, 255, 255, 0.6);
+  }
+}
+
+/***************** BASE — slides de contenu **********************/
+
+section {
+  background-color: var(--background-color);
+  color: var(--fg-color);
+}
+
+section h1 {
+  font-weight: 900;
+  letter-spacing: -0.02em;
+  border-bottom: none;
+}
+
+/* point rouge caractéristique du site, après chaque titre h1 */
+section h1::after {
+  content: ".";
+  color: var(--primary-color);
+}
+
+section h2,
+section h3 {
+  font-weight: 600;
+  letter-spacing: -0.01em;
+  color: var(--h1-color);
+}
+
+section strong {
+  font-weight: 900;
+}
+
+section a {
+  color: var(--primary-color);
+  font-weight: 600;
+  text-decoration: underline;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 2px;
+}
+
+section a:hover {
+  text-decoration: underline wavy;
+}
+
+/* code */
+section code {
+  font-family: "Source Code Pro", monospace;
+}
+
+section code:not(pre code) {
+  padding: 2px 6px;
+  border-radius: 6px;
+  background-color: var(--fg05);
+  color: var(--red-fg);
+}
+
+section pre {
+  line-height: 1.4;
+  padding: 1rem;
+  border-radius: 12px;
+  box-shadow: var(--shadow);
+  background-color: #fdf6e3;
+  color: #657b83;
+}
+
+section pre code {
+  background-color: transparent;
+  color: inherit;
+  padding: 0;
+}
+
+@media (prefers-color-scheme: dark) {
+  section pre {
+    background-color: #073642;
+    color: #93a1a1;
+  }
+}
+
+/* tableaux — aspect épuré du site */
+section table {
+  border-collapse: collapse;
+}
+
+section table th {
+  background-color: var(--table-header-color);
+  color: #fff;
+  border-top: 2px solid var(--primary-color);
+}
+
+section table th,
+section table td {
+  border: 1px solid var(--fg05);
+}
+
+section table tr:last-child {
+  border-bottom: 2px solid var(--primary-color);
+}
+
+/***************** cool-list / TOC **********************/
+
+/* items ordinaires : bloc gris clair + pastille numéro rouge */
+section.cool-list ol > li > em {
+  position: relative;
+  display: block;
+  padding: 0.4em 0.4em 0.4em 2em;
+  margin: 0.5em 0;
+  background: #eceef0;
+  color: #333;
+  border-radius: 0.3em;
+  font-style: normal;
+  font-weight: 600;
+}
+
+section.cool-list ol > li > em:before {
+  content: counter(li);
+  counter-increment: li;
+  position: absolute;
+  left: -1.3em;
+  top: 50%;
+  margin-top: -1.3em;
+  background: var(--cool-list-color);
+  height: 2em;
+  width: 2em;
+  line-height: 2em;
+  border: 0.3em solid #fff;
+  text-align: center;
+  font-weight: 900;
+  border-radius: 2em;
+  color: #fff;
+}
+
+/* item "courant", mis en gras-italique (* **Item** *) : bloc rouge + pastille inversée */
+section.cool-list ol > li > em:has(> strong) {
+  background: var(--cool-list-color);
+  color: #fff;
+  box-shadow: var(--shadow);
+}
+
+section.cool-list ol > li > em:has(> strong) > strong {
+  color: #fff;
+}
+
+section.cool-list ol > li > em:has(> strong):before {
+  content: counter(li);
+  counter-increment: li;
+  position: absolute;
+  left: -1.3em;
+  top: 50%;
+  margin-top: -1.3em;
+  background: #fff;
+  height: 2em;
+  width: 2em;
+  line-height: 2em;
+  border: 0.3em solid var(--cool-list-color);
+  text-align: center;
+  font-weight: 900;
+  border-radius: 2em;
+  color: var(--cool-list-color);
+}
+
+/***************** TITLEPAGE **********************/
+
+section.titlepage {
+  background-color: var(--background-color);
+}
+
+section.titlepage h1 {
+  color: var(--title-color);
+}
+
+section.titlepage h1::after {
+  content: ".";
+  color: var(--primary-color);
+}
+
+section.titlepage h3,
+section.titlepage h4,
+section.titlepage h5 {
+  line-height: 1.15;
+  margin: 0.35em 0 0;
+  text-align: right;
+  color: var(--titlepage-color);
+}
+
+/***************** TRANSITION **********************/
+
+section.transition {
+  background-color: var(--background-color);
+  text-align: center;
+}
+
+section.transition :is(h1, h2, p) {
+  color: var(--primary-color);
+}
+
+section.transition :is(h1, h2) {
+  font-weight: bold;
+}
+
+section.transition p {
+  font-size: 1.9em;
+  font-weight: bold;
+}
+
+section.transition span,
+section.transition a {
+  font-size: 22px;
+  color: var(--fg-color);
+  font-weight: normal;
+}
+
+section.transition h1::after {
+  content: ".";
+  color: var(--fg-color);
+}
+
+/***************** CITE **********************/
+
+section.cite {
+  background-color: var(--background-color);
+  border-left: 6px solid var(--primary-color);
+}
+
+section.cite p {
+  color: var(--fg-color);
+}
+
+section.cite strong {
+  color: var(--primary-color);
+}
