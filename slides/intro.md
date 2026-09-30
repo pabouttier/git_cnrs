@@ -18,7 +18,7 @@ margin-left: 10%;
 # Ininitation à Git & GitLab
 ## Introduction
 
-### GitLab@CNRS - 09-10/01/2024
+### GitLab@CNRS - 2026
 #### [Pierre-Antoine Bouttier](mailto:pierre-antoine.bouttier@univ-grenoble-alpes.fr)
 
 ---

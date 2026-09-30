@@ -17,7 +17,7 @@ margin-left: 10%;
 # Introduction à GitLab
 ## Cours et mise en pratique
 
-### GitLab@CNRS - 09-10/01/2024
+### GitLab@CNRS - 2026
 #### [Pierre-Antoine Bouttier](mailto:pierre-antoine.bouttier@univ-grenoble-alpes.fr)
 
 ---
@@ -262,7 +262,3 @@ Projet sur une forge : ensemble de répertoires et de fichiers (**repository/dé
 <!-- _class: transition -->
 
 Lien entre nos dépôts `git` locaux et Gitlab ?
-
-
-
-
