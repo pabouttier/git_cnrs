@@ -234,7 +234,7 @@ Création du site
 # En pratique
 
 - Si possible, [installez hugo sur votre machine](https://gohugo.io/installation/)
-- [Clonez ce dépôt](https://gricad-gitlab.univ-grenoble-alpes.fr/git_cnrs/formation-2024/awesome-website)
+- [Clonez ce dépôt](git@git.unistra.fr:formation_cnrs_2026/awesome-website.git)
 - Dans un terminal, placez-vous dans le dossier du dépôt et lancez `hugo serve`
 - Explorons ensemble le contenu du dépôt
 
