@@ -632,4 +632,4 @@ $ git switch -c new_beginning
 
 # Prêts pour GitLab ?
 
-<span style="font-size: 0.6em;">👉 <a href="../exercices/#partie-b-gitlab-en-pratique-forge-distant-collaboratif">Passer à la Partie B — GitLab</a></span>
+<span style="font-size: 0.6em;">👉 <a href="https://pabouttier.github.io/git_cnrs/slides/gitlab.html">Passer à la Partie B — GitLab</a></span>
