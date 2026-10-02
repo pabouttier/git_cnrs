@@ -359,7 +359,7 @@ Jusqu'à maintenant, chacun a travaillé dans son propre projet GitLab/dépôt G
 ---
 # En pratique
 
-- Clonez tous le projet https://gricad-gitlab.univ-grenoble-alpes.fr/git_cnrs/formation-2024/sandbox
+- Clonez tous le projet git@git.unistra.fr:formation_cnrs_2026/common.git
 - Travaillez tous localement dans ce projet (commits, branches, etc)
 - Essayez tous d'éditer le README dans la branche `main`
 - Synchroniser vos modifications avec le dépôt distant
@@ -403,7 +403,7 @@ Peu importe le workflow choisi et sa complexité, il faut qu'il soit **explicit�
 ---
 # En pratique
 
-- Retournez sur le projet https://gricad-gitlab.univ-grenoble-alpes.fr/git_cnrs/common
+- Retournez sur le projet git@git.unistra.fr:formation_cnrs_2026/common.git
 - Crééz chacun une branche `votre_login`
 - Placez vous dans cette branche et éditez le fichier `README.md`
 - Synchroniser vos modifications de cette branche  avec le dépôt distant
