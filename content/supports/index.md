@@ -6,7 +6,7 @@ insert_anchor_links = "right"
 
 # Plan
 
-Cette formation abordera les thèmes décrits ci-dessous. Les supports associés seront bientôt publiés. 
+Cette formation aborde les thèmes décrits ci-dessous. Les supports associés sont accessibles ci-dessous.
 
 ## [Git](../../git_cnrs/slides/git.html)
 

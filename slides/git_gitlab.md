@@ -246,12 +246,14 @@ Nous pouvons gérer entièrement notre dépôt git via l'interface web. La plupa
 ---
 # Mise en situation
 
-Une fois votre projet `sandbox_votre_login` créé, créez via l'interface web : 
-- une branche
-- dans cette branche, un fichier nommé `votrelogin.md`
-- Insérez ce que vous voulez dedans et faites un commit
+<div class="practice">
 
-<span style="font-size: 0.6em;">👉 <a href="../exercices/#exercice-b-3-manipuler-le-depot-via-l-interface-web">Exercice B.3 — Manipuler le dépôt via le web</a></span>
+
+🛠️ **À vous** — Créez la branche `notes-web` et ajoutez `notes/2026-06-06.md` depuis le navigateur. Le dépôt local ne doit pas bouger.
+
+<a href="../exercices/#b3">Fiche B.3 — mission, indices, solution →</a>
+
+</div>
 
 --- 
 # Récupérer le dépôt du serveur gitlab
@@ -268,13 +270,13 @@ Deux protocoles sont disponibles pour répondre à ce besoin :
 ---
 # Mise en situation
 
-- Récupérez (clonez) le dépôt distant `sandbox_votre_login` sur votre machine
-- Travaillez comme vous le souhaitez, que ce soit en local ou sur GitLab
-- **Explorez !** 
-  - Faites des commits, des branches, des merge, etc.
-- Synchroniser vos modifications. 
+<div class="practice">
 
-<span style="font-size: 0.6em;">👉 <a href="../exercices/#exercice-b-4-cloner-un-depot-distant">Exercices B.4 à B.6 — dépôts distants</a></span>
+🛠️ **À vous** — Reliez votre carnet local au projet vide (`git remote add`), poussez `main`, puis clonez-le dans un second dossier pour comparer les historiques.
+
+<a href="../exercices/#b4">Fiches B.4 à B.6 — publier, synchroniser, branches distantes →</a>
+
+</div>
 
 ---
 <!-- _class: transition -->
@@ -306,7 +308,7 @@ Documentation
 - https://docs.gitlab.com/ee/user/markdown.html
 - https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet
 
-<span style="font-size: 0.6em;">👉 <a href="../exercices/#exercice-b-7-rediger-en-markdown-gitlab-flavored">Exercice B.7 — Rédiger en Markdown</a></span>
+<span style="font-size: 0.6em;">👉 <a href="../exercices/#b7">À vous : réécrivez le README pour qu'un nouveau venu comprenne le carnet en deux minutes (B.7)</a></span>
 
 ---
 # Le langage Markdown
@@ -359,12 +361,13 @@ Jusqu'à maintenant, chacun a travaillé dans son propre projet GitLab/dépôt G
 ---
 # En pratique
 
-- Clonez tous le projet git@git.unistra.fr:formation_cnrs_2026/common.git
-- Travaillez tous localement dans ce projet (commits, branches, etc)
-- Essayez tous d'éditer le README dans la branche `main`
-- Synchroniser vos modifications avec le dépôt distant
+<div class="practice">
 
-<span style="font-size: 0.6em;">👉 <a href="../exercices/#exercice-b-8-pull-push-synchronises-sur-un-meme-depot">Exercice B.8 — Pull/push synchronisés</a></span>
+🛠️ **À vous** — À deux, clonez le projet `common` (URL fournie par le formateur), ajoutez chacun votre fiche et votre ligne au tableau des participants, puis synchronisez sans écraser la ligne de l'autre.
+
+<a href="../exercices/#b8">Fiche B.8 — mission, indices, solution →</a>
+
+</div>
 
 ---
 # Les workflows Git
@@ -403,10 +406,12 @@ Peu importe le workflow choisi et sa complexité, il faut qu'il soit **explicit�
 ---
 # En pratique
 
-- Retournez sur le projet git@git.unistra.fr:formation_cnrs_2026/common.git
-- Crééz chacun une branche `votre_login`
-- Placez vous dans cette branche et éditez le fichier `README.md`
-- Synchroniser vos modifications de cette branche  avec le dépôt distant
+- Retournez sur le projet `common` (URL fournie par le formateur)
+- Créez chacun une branche `fiche-<login>`
+- Placez-vous dans cette branche et éditez votre fiche dans `participants/`
+- Synchronisez vos modifications de cette branche avec le dépôt distant
+
+<span style="font-size: 0.6em;">👉 <a href="../exercices/#b10">À vous : créez votre branche <code>fiche-&lt;login&gt;</code> et poussez-la (B.10)</a></span>
 
 ---
 <!-- _class: transition -->
@@ -432,11 +437,13 @@ Démonstration d'une demande de fusion
 ---
 # Mise en pratique 
 
-- Retournez sur GitLab 
-- Réaliser une demande de fusion de votre branche dans la branche principale du projet `common`
-- Reviewer une demande de fusion faite par quelqu'un d'autre. 
+<div class="practice">
 
-<span style="font-size: 0.6em;">👉 <a href="../exercices/#exercice-b-10-merge-request-et-revue-de-code">Exercice B.10 — Merge-request et revue</a></span>
+🛠️ **À vous** — Ouvrez une merge-request pour votre fiche, relisez celle de votre binôme avec au moins deux commentaires, puis fusionnez après approbation.
+
+<a href="../exercices/#b10">Fiche B.10 — mission, indices, solution →</a>
+
+</div>
 
 ---
 <!-- _class: transition -->
@@ -459,12 +466,13 @@ Une fois vos modifications faites, vous pouvez faire une **demande de fusion** d
 ---
 # Mise en pratique 
 
-- Retournez sur GitLab 
-- Réalisez une bifurcation du projet `common` dans le groupe sandbox (***Attention au nommage de la bifurcation***) 
-- Faites des modifications.
-- Demandez une fusion ! 
+<div class="practice">
 
-<span style="font-size: 0.6em;">👉 <a href="../exercices/#exercice-b-11-fork-merge-request">Exercice B.11 — Fork + merge-request</a></span>
+🛠️ **À vous** — Forkez le projet d'une autre équipe, corrigez un vrai défaut, puis proposez la correction au projet source par merge-request.
+
+<a href="../exercices/#b11">Fiche B.11 — mission, indices, solution →</a>
+
+</div>
 
 ---
 <!-- _class: transition -->
@@ -491,7 +499,17 @@ Les tickets GitLab permettent de :
 - **Faire référence à une issue** dans une autre issue ou un message de commit via `#id`, id étant le numéro de l’issue
 - **Clore automatiquement une issue via un message de commit**. Il suffit qu’il contienne la chaîne `Fix #id` (ou un des autres mots-clés mentionnés ici :
 https://docs.gitlab.com/ee/user/project/issues/automatic_issue_closing.html).
-- ***Créez-en dans le projet `common`*** → [Exercice B.9 — Issues, labels et jalons](../exercices/#exercice-b-9-issues-labels-et-jalons-board-milestones)
+
+---
+# Mise en pratique : le backlog
+
+<div class="practice">
+
+🛠️ **À vous** — Transformez trois remarques sur `common` en issues actionnables (contexte, attendu, étapes), triez-les sur un board, puis fermez-en une avec `Fix #<numéro>`.
+
+<a href="../exercices/#b9">Fiche B.9 — mission, indices, solution →</a>
+
+</div>
 
 ---
 <!-- _class: transition -->

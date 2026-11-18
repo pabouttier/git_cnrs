@@ -232,21 +232,33 @@ section.cool-list ol > li > em:has(> strong) > strong {
 }
 
 section.cool-list ol > li > em:has(> strong):before {
-  content: counter(li);
-  counter-increment: li;
-  position: absolute;
-  left: -1.3em;
-  top: 50%;
-  margin-top: -1.3em;
+  /* Les compteurs (content/counter-increment) restent gérés par structure.css :
+     le compteur imbriqué `li2` ne doit pas être écrasé par le compteur `li`. */
   background: #fff;
-  height: 2em;
-  width: 2em;
-  line-height: 2em;
-  border: 0.3em solid var(--cool-list-color);
-  text-align: center;
-  font-weight: 900;
-  border-radius: 2em;
+  border-color: var(--cool-list-color);
   color: var(--cool-list-color);
+  font-weight: 900;
+}
+
+/***************** PRACTICE **********************/
+
+section .practice {
+  margin: 1em 0 0;
+  padding: 0.6em 0.9em;
+  border-left: 0.22em solid var(--primary-color);
+  border-radius: 0 0.45em 0.45em 0;
+  background-color: var(--fg05);
+  font-size: 0.8em;
+  line-height: 1.4;
+}
+
+section .practice p {
+  margin: 0.25em 0;
+}
+
+section .practice a {
+  color: var(--primary-color);
+  font-weight: 700;
 }
 
 /***************** TITLEPAGE **********************/

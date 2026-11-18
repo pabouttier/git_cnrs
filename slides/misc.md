@@ -36,7 +36,7 @@ Le fichier nommé `.gitignore` permet d'indiquer les fichiers à ne pas considé
 
 **Attention** : si des fichiers décrits dans le .gitignore sont déjà suivis par git, ils le resteront.
 
-<span style="font-size: 0.6em;">👉 <a href="../exercices/#exercice-a-7-les-fichiers-supprimes-et-les-exclus">Exercice A.7 — fichiers supprimés et exclus</a></span>
+<span style="font-size: 0.6em;">👉 <a href="../exercices/#a7">À vous : retirez de l'index un fichier déjà suivi, sans l'effacer du disque (A.7)</a></span>
 
 ---
 ## Le fichier `.gitignore`
@@ -104,7 +104,7 @@ Différence entre la version courante et celle d'un commit précédent
 git diff d18e05e80fe11c6206e2cb5a0624b477a6c31226 monFichier
 ```
 
-<span style="font-size: 0.6em;">👉 <a href="../exercices/#pour-aller-plus-loin-git">Explorez « Pour aller plus loin (Git) »</a></span>
+<span style="font-size: 0.6em;">👉 <a href="../exercices/#pour-aller-plus-loin">Testez <code>git diff</code> et <code>git diff --staged</code> sur le carnet, puis notez la différence</a></span>
 
 ---
 
@@ -151,7 +151,7 @@ Bref, c’est un outil indispensable à la vie du projet, qu’il faut exploiter
 - clore automatiquement une issue via un message de commit. Il suffit qu’il contienne la chaîne `Fix #id` (ou un des autres mots-clés mentionnés ici :
 https://docs.gitlab.com/ee/user/project/issues/automatic_issue_closing.html).
 
-<span style="font-size: 0.6em;">👉 <a href="../exercices/#exercice-b-9-issues-labels-et-jalons-board-milestones">Exercice B.9 — Issues, labels et jalons</a></span>
+<span style="font-size: 0.6em;">👉 <a href="../exercices/#b9">À vous : transformez trois remarques en issues actionnables, puis fermez-en une avec <code>Fix #numéro</code> (B.9)</a></span>
 
 ---
 # Fork et merge-requests - Divergence et demande de fusion
@@ -193,7 +193,7 @@ Le fork est **une copie d'un projet gitlab** dans un espace de noms où vous ave
 1. On fait une revue de la demande de fusion
 2. On la rejette ou on l'intègre
 
-<span style="font-size: 0.6em;">👉 <a href="../exercices/#exercice-b-11-fork-merge-request">Exercice B.11 — Fork + merge-request</a></span>
+<span style="font-size: 0.6em;">👉 <a href="../exercices/#b11">À vous : forkez, corrigez, proposez une MR (B.11)</a></span>
 
 ---
 # `git stash`, pour mettre de côté des changements non-validés

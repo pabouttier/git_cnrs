@@ -498,7 +498,7 @@ Au bout d'un moment, on peut vouloir fusionner les branches, c'est à dire inté
 
 Un peu de pratique
 
-<span style="font-size: 0.6em;">👉 <a href="../exercices/#partie-a-git-en-pratique-local-ligne-de-commande">Accéder aux exercices — Partie A (Git)</a></span>
+<span style="font-size: 0.6em;">👉 <a href="../exercices/#partie-a">Partie A — construisez le carnet <code>carnet-de-bord</code> (A.1 à A.9)</a></span>
 
 ---
 
@@ -567,7 +567,7 @@ Une fois fait, il faut indexer notre modification du fichier (`git add ...`) et 
 
 Un peu de pratique
 
-<span style="font-size: 0.6em;">👉 <a href="../exercices/#exercice-a-8-branches-et-fusion">Exercices — fusion et conflits (A.8 & A.9)</a></span>
+<span style="font-size: 0.6em;">👉 <a href="../exercices/#a9">À vous : provoquez un conflit sur le titre du README, lisez-le et résolvez-le (A.9)</a></span>
 
 ---
 
@@ -624,7 +624,7 @@ $ git switch -c new_beginning
 - **Les alias, le .gitignore, etc.**
 - [**Les interfaces graphiques à git**](https://git-scm.com/downloads/guis)
 
-<span style="font-size: 0.6em;">👉 <a href="../exercices/#pour-aller-plus-loin-git">Explorez « Pour aller plus loin (Git) »</a></span>
+<span style="font-size: 0.6em;">👉 <a href="../exercices/#pour-aller-plus-loin">Choisissez une commande inconnue (<code>stash</code>, <code>tag</code>, <code>rebase</code>…) et testez-la sur une copie</a></span>
 
 ---
 

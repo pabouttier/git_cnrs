@@ -201,7 +201,7 @@ Les Générateurs de sites statiques (SSG en anglais) :
 - **Construit**, en quelques commandes/scripts, **un site web à partir de fichiers textes (contenu et templates/css) et médias**
 - Le site construit est **statique** (pas d'interactions avec les visiteurs)
 - Les données d'entrée sont stockées dans un système de fichiers (pas de BDD)
-- Exemples : **hugo**, jekyll, pelican, gatsby, eleventy
+- Exemples : **zola**, hugo, jekyll, pelican, gatsby, eleventy
 
 ---
 # Pourquoi nous intéressons-nous aux SSGs ? Pros
@@ -221,9 +221,32 @@ Quand ne pas les utiliser :
 # Les différents SSGs
 
 Comme déjà mentionné, il existe pléthore de SSGs
-- Ils peuvent être écrits dans différents langages : python, php, javascript, etc.
+- Ils peuvent être écrits dans différents langages : Python, PHP, JavaScript, Rust...
 - Fonctionnements souvent semblables
-- Nous utiliserons aujourd'hui [le SSG Hugo](https://gohugo.io/) : communauté active (plein d'avantages à ça), s'installe assez facilement sur toutes les plateformes, rapide, a pas mal de fonctionnalités, open source. 
+- Nous utiliserons aujourd'hui [Zola](https://www.getzola.org/) : **un seul binaire, aucune dépendance**, rapide et open source. C'est aussi le SSG du site de cette formation.
+
+---
+# Zola en trois commandes
+
+```shell
+$ zola init mon-site
+$ cd mon-site
+$ zola serve
+```
+
+Un projet Zola minimal :
+
+```text
+mon-site/
+├── zola.toml        # config (ou config.toml)
+├── content/         # pages en Markdown
+│   └── _index.md    # à créer
+├── templates/       # gabarits Tera
+├── static/          # images, CSS…
+└── public/          # généré par `zola build`
+```
+
+`zola serve` recharge automatiquement le site sur http://127.0.0.1:1111.
 
 ---
 <!-- _class: transition -->
@@ -233,17 +256,22 @@ Création du site
 ---
 # En pratique
 
-- Si possible, [installez hugo sur votre machine](https://gohugo.io/installation/)
-- [Clonez ce dépôt](git@git.unistra.fr:formation_cnrs_2026/awesome-website.git)
-- Dans un terminal, placez-vous dans le dossier du dépôt et lancez `hugo serve`
-- Explorons ensemble le contenu du dépôt
+- **Installer Zola** : un binaire autonome.
+  - Windows : `winget install getzola.zola`.
+  - macOS : `brew install zola`.
+  - Linux : téléchargez l'archive de la [dernière release](https://github.com/getzola/zola/releases), décompressez-la, placez `zola` dans votre `PATH`.
+  - Vérifiez avec `zola --version`.
+- Clonez le dépôt `awesome-website` fourni par le formateur (URL communiquée en séance).
+- Dans le dossier, lancez `zola serve`, puis ouvrez http://127.0.0.1:1111.
+- Explorons ensemble `zola.toml` (ou `config.toml`), `content/` et `templates/`.
 
 ---
 # Mais où sont nos pages web ? 
 
-Jusqu'à maintenant, nous avons visualisé le site web généré par Hugo. Mais où est-il, en terme de fichiers ?
-- Nulle part :) Pour générer les fichiers qui seront publiés par un serveur web, il faut lancer la commande `hugo -D`
-- Un nouveau dossier, dans votre projet, a été créé : `public/`. Allons y faire un tour. 
+Jusqu'à maintenant, nous avons visualisé le site généré par Zola. Mais où est-il, en termes de fichiers ?
+- Nulle part :) `zola serve` construit le site à la volée et le sert.
+- Pour générer les fichiers qui seront publiés par un serveur web, lancez `zola build`.
+- Un nouveau dossier `public/` apparaît à la racine du projet. Allons-y faire un tour.
 
 ---
 <!-- _class: transition -->
@@ -283,20 +311,40 @@ GitLab Pages:
    3. ***Mise en œuvre de la CI/CD***
 
 ---
-# Activation - Démo
+# Le job Pages pour Zola
 
-- Création du fichier `gitlab-ci.yml` (cf. dépôt du site web)
-- Activation du runner (***Paramètres/CICD/Exécuteurs***)
+```yaml
+pages:
+  image:
+    name: ghcr.io/getzola/zola:v0.23.6-alpine
+    entrypoint: [""]  # le runner lance un shell, pas zola
+  script:
+    - zola build --base-url "$CI_PAGES_URL"
+  artifacts:
+    paths: [public]
+  rules:
+    - if: $CI_COMMIT_BRANCH == $CI_DEFAULT_BRANCH
+```
+
+Zola écrit dans `public/` : GitLab Pages n'a plus qu'à publier l'artefact.
+
+---
+# Activation — démo
+
+- Ajoutez le fichier `.gitlab-ci.yml` avec le job `pages` ci-dessus.
+- Vérifiez qu'un runner est disponible (*Paramètres → CI/CD → Runners*).
+- Poussez sur `main`, puis ouvrez *Déploiements → Pages*.
 
 ---
 # Mise en pratique 
 
-- Sur le dépôt du site web, créez une branche à votre nom
-- Faites des modifs dans cette branche, dans les dossiers `content/en/home` et `content/fr/home`
-- Synchronisez vos modifications et quand vous êtes satisfaits faites une demande de fusion dans `main`
-- Reviewez une demande de fusion faites par quelqu'un d'autre. 
+<div class="practice">
 
-<span style="font-size: 0.6em;">👉 <a href="../exercices/#exercice-b-12-un-premier-pipeline">Exercices B.12 & B.13 — pipeline et GitLab Pages</a></span>
+🛠️ **À vous** — Sur **votre carnet**, ajoutez un job qui échoue sur un `TODO` dans le README, corrigez-le, puis publiez le dossier `site/` avec GitLab Pages. Vérifiez qu'une branche ne déploie pas.
+
+<a href="../exercices/#b12">Fiches B.12 et B.13 — pipeline et Pages →</a>
+
+</div>
 
 ---
 <!-- _class: transition -->

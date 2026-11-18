@@ -185,11 +185,13 @@ https://gricad-gitlab.univ-grenoble-alpes.fr/help
 ---
 # Mise en situation
 
-- Connectez-vous avec vos identifiants
-- Visitez le menu *Settings*, complétez ce qui vous paraît utile
-- Explorez les différents menus/boutons, familiarisez-vous avec l'interface, la doc en ligne, etc.
+<div class="practice">
 
-<span style="font-size: 0.6em;">👉 <a href="../exercices/#exercice-b-1-premiere-connexion-et-profil">Exercice B.1 — Première connexion et profil</a></span>
+🛠️ **À vous** — Connectez-vous, complétez votre profil et réglez vos notifications. Notez votre *username* : il servira dans les URLs et les mentions.
+
+<a href="../exercices/#b1">Fiche B.1 — mission, indices, solution →</a>
+
+</div>
 
 ---
 # TOC
@@ -238,11 +240,13 @@ https://gricad-gitlab.univ-grenoble-alpes.fr/help
 ---
 # Mise en situation
 
-- Une fois connectés à gricad-gitlab, demandez à rejoindre le groupe `git_cnrs/Formation CNRS 2024`
-- Créez un projet `sandbox_votre_login` dans ce groupe et sous-groupe
-- Nous regarderons les permissions de chaque membre du projet en détail 
+<div class="practice">
 
-<span style="font-size: 0.6em;">👉 <a href="../exercices/#exercice-b-2-groupes-et-projets">Exercice B.2 — Groupes et projets</a></span>
+🛠️ **À vous** — Créez un projet **vide** `carnet-de-bord` dans le groupe de formation, en visibilité privée. Ne cochez pas « Initialize repository with a README ».
+
+<a href="../exercices/#b2">Fiche B.2 — mission, indices, solution →</a>
+
+</div>
 
 ---
 # Groupes et projets, bonnes pratiques
