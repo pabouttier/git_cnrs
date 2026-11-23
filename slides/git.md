@@ -396,7 +396,7 @@ git commit --amend
 
 **Personnellement**, je préfère éviter au maximum ces méthodes qui *détruisent* toujours quelque chose. 
 
-<span style="font-size: 0.6em;">👉 <a href="../exercices/#etape-2">Étape 2 — Tenir un historique propre (A.4 à A.7)</a></span>
+<p style="margin: 0.15em 0 0; font-size: 0.6em;">👉 <a href="../exercices/#etape-2">Étape 2 — Tenir un historique propre (A.4 à A.7)</a></p>
 
 ---
 # TOC
