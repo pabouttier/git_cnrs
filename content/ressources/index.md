@@ -32,7 +32,7 @@ Des ressources complémentaires pour explorer et approfondir les notions abordé
 
 ### Le site d'exemple
 
-- [Dépôt `awesome-website`](https://gricad-gitlab.univ-grenoble-alpes.fr/git_cnrs/awesome-website) : projet Zola servant de site web d'exemple pour la formation.
+- [Dépôt `awesome-website`](https://gricad-gitlab.univ-grenoble-alpes.fr/git_cnrs/awesome-website) : projet Zola servant de site web d'exemple pour la formation. La version publiée est visible sur [git_cnrs.gricad-pages.univ-grenoble-alpes.fr/awesome-website](https://git_cnrs.gricad-pages.univ-grenoble-alpes.fr/awesome-website/).
 
 ### Sur les runners
 

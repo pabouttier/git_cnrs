@@ -261,7 +261,7 @@ Création du site
   - macOS : `brew install zola`.
   - Linux : téléchargez l'archive de la [dernière release](https://github.com/getzola/zola/releases), décompressez-la, placez `zola` dans votre `PATH`.
   - Vérifiez avec `zola --version`.
-- Clonez le dépôt d'exemple [`awesome-website`](https://gricad-gitlab.univ-grenoble-alpes.fr/git_cnrs/awesome-website) : c'est un projet Zola minimal qui sert de site web d'exemple pour cette formation.
+- Clonez le dépôt d'exemple [`awesome-website`](https://gricad-gitlab.univ-grenoble-alpes.fr/git_cnrs/awesome-website) : c'est un projet Zola minimal qui sert de site web d'exemple pour cette formation. La version publiée est visible à [cette adresse](https://git_cnrs.gricad-pages.univ-grenoble-alpes.fr/awesome-website/).
 - Dans le dossier, lancez `zola serve`, puis ouvrez http://127.0.0.1:1111.
 - Explorons ensemble `zola.toml` (ou `config.toml`), `content/` et `templates/`.
 
@@ -319,7 +319,7 @@ pages:
     name: ghcr.io/getzola/zola:v0.23.6-alpine
     entrypoint: [""]  # le runner lance un shell, pas zola
   script:
-    - zola build --base-url "$CI_PAGES_URL"
+    - zola build
   artifacts:
     paths: [public]
   rules:
@@ -327,6 +327,8 @@ pages:
 ```
 
 Zola écrit dans `public/` : GitLab Pages n'a plus qu'à publier l'artefact.
+
+⚠️ `base_url` (dans `config.toml`) doit valoir l'URL publique du site, sans slash final. Sur GRICAD, `$CI_PAGES_URL` pointe vers un domaine unique non servi : ne l'utilisez pas. Prenez l'URL affichée dans *Déploiements → Pages*.
 
 ---
 # Activation — démo
