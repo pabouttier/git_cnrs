@@ -95,6 +95,8 @@ Les avantages de git :
 - **Gitlab**, github
 - ...
 
+<span style="font-size: 0.6em;">👉 La mise en pratique se fait dans la <a href="../exercices/#partie-a">Partie A — construisez le carnet <code>carnet-de-bord</code> (A.1 à A.9)</a>.</span>
+
 ---
 # TOC
 
@@ -331,6 +333,8 @@ $ git add -A # ou git add --all
 
 Les 30% restants sont un peu dans la suite et surtout dans la partie gitlab.
 
+<span style="font-size: 0.6em;">👉 <a href="../exercices/#etape-1">Étape 1 — Démarrer le carnet (A.1 à A.3)</a></span>
+
 ---
 # TOC
 
@@ -391,6 +395,8 @@ git commit --amend
 ```
 
 **Personnellement**, je préfère éviter au maximum ces méthodes qui *détruisent* toujours quelque chose. 
+
+<span style="font-size: 0.6em;">👉 <a href="../exercices/#etape-2">Étape 2 — Tenir un historique propre (A.4 à A.7)</a></span>
 
 ---
 # TOC
@@ -498,7 +504,7 @@ Au bout d'un moment, on peut vouloir fusionner les branches, c'est à dire inté
 
 Un peu de pratique
 
-<span style="font-size: 0.6em;">👉 <a href="../exercices/#partie-a">Partie A — construisez le carnet <code>carnet-de-bord</code> (A.1 à A.9)</a></span>
+<span style="font-size: 0.6em;">👉 <a href="../exercices/#a8">Fiche A.8 — créez, fusionnez et supprimez une branche</a></span>
 
 ---
 
@@ -631,5 +637,7 @@ $ git switch -c new_beginning
 <!-- _class: transition -->
 
 # Prêts pour GitLab ?
+
+<span style="font-size: 0.6em;">👉 <a href="../exercices/#etape-3">Étape 3 — Branches et conflits (A.8 et A.9)</a></span>
 
 <span style="font-size: 0.6em;">👉 <a href="https://pabouttier.github.io/git_cnrs/slides/gitlab.html">Passer à la Partie B — GitLab</a></span>
