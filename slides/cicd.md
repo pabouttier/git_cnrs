@@ -261,7 +261,7 @@ Création du site
   - macOS : `brew install zola`.
   - Linux : téléchargez l'archive de la [dernière release](https://github.com/getzola/zola/releases), décompressez-la, placez `zola` dans votre `PATH`.
   - Vérifiez avec `zola --version`.
-- Clonez le dépôt `awesome-website` fourni par le formateur (URL communiquée en séance).
+- Clonez le dépôt d'exemple [`awesome-website`](https://gricad-gitlab.univ-grenoble-alpes.fr/git_cnrs/awesome-website) : c'est un projet Zola minimal qui sert de site web d'exemple pour cette formation.
 - Dans le dossier, lancez `zola serve`, puis ouvrez http://127.0.0.1:1111.
 - Explorons ensemble `zola.toml` (ou `config.toml`), `content/` et `templates/`.
 

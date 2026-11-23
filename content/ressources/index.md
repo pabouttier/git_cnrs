@@ -30,6 +30,10 @@ Des ressources complémentaires pour explorer et approfondir les notions abordé
 
 ## La CI/CD
 
+### Le site d'exemple
+
+- [Dépôt `awesome-website`](https://gricad-gitlab.univ-grenoble-alpes.fr/git_cnrs/awesome-website) : projet Zola servant de site web d'exemple pour la formation.
+
 ### Sur les runners
 
 - [Doc d'installation Gitlab](https://docs.gitlab.com/runner/install/)

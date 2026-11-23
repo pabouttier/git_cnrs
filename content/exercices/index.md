@@ -1329,7 +1329,7 @@ Closes #12
 
 **À faire**
 
-1. Trouvez un projet dont vous n'êtes pas membre (le `common` d'une autre équipe, ou le dépôt `awesome-website` fourni par le formateur).
+1. Trouvez un projet dont vous n'êtes pas membre (le `common` d'une autre équipe, ou le dépôt [`awesome-website`](https://gricad-gitlab.univ-grenoble-alpes.fr/git_cnrs/awesome-website) fourni par le formateur).
 2. Faites un **fork** vers votre espace personnel. Notez le nom du fork.
 3. Clonez votre fork, créez une branche `fix-<sujet>`, corrigez un vrai défaut (faute, lien cassé, phrase incompréhensible), committez et poussez.
 4. Ouvrez une merge-request **de votre fork** vers la branche `main` du projet source. Décrivez le problème et la correction.
@@ -1581,7 +1581,7 @@ pages:
 
 </details>
 
-**🚀 Défi** — Ajoutez une seconde page `site/notes.html` reliée depuis l'index et vérifiez qu'elle est publiée. Si vous préférez un générateur de site statique, Zola fait le travail en une commande : `zola build` écrit le site dans `public/`, que le job publie tel quel. Le dépôt `awesome-website` fourni par le formateur est un projet Zola et peut servir de variante.
+**🚀 Défi** — Ajoutez une seconde page `site/notes.html` reliée depuis l'index et vérifiez qu'elle est publiée. Si vous préférez un générateur de site statique, Zola fait le travail en une commande : `zola build` écrit le site dans `public/`, que le job publie tel quel. Le dépôt [`awesome-website`](https://gricad-gitlab.univ-grenoble-alpes.fr/git_cnrs/awesome-website) fourni par le formateur est un projet Zola et peut servir de variante.
 
 ---
 
