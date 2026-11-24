@@ -638,6 +638,4 @@ $ git switch -c new_beginning
 
 # Prêts pour GitLab ?
 
-<span style="font-size: 0.6em;">👉 <a href="../exercices/#etape-3">Étape 3 — Branches et conflits (A.8 et A.9)</a></span>
-
 <span style="font-size: 0.6em;">👉 <a href="https://pabouttier.github.io/git_cnrs/slides/gitlab.html">Passer à la Partie B — GitLab</a></span>
